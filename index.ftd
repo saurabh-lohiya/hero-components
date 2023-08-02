@@ -190,16 +190,15 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
 spacing.fixed.px: 15
 align-self: center
 
 -- ftd.text: $hero-primary.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 
@@ -277,16 +276,15 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
 spacing.fixed.px: 15
 align-self: center
 
 -- ftd.text: $hero-secondary.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 
@@ -368,15 +366,14 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
+color: $inherited.colors.text-strong
 
 -- ftd.text: $hero-tertiary.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -475,6 +472,7 @@ src: $hero-tertiaryV2.hero-image
 -- ftd.column:
 width.fixed.percent: 50
 width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
 align-content: center
 align-self: center
 
@@ -482,13 +480,11 @@ align-self: center
 width.fixed.percent: 65
 
 -- ftd.text: $hero-tertiaryV2.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -562,15 +558,14 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
+color: $inherited.colors.text-strong
 
 -- ftd.text: $hero-tertiary-with-search-bar.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -670,15 +665,14 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
+color: $inherited.colors.text-strong
 
 -- ftd.text: $hero-tertiary-with-search-barV2.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -747,16 +741,15 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
 align-self: center
 
 -- ftd.text: $hero-with-search-bar.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -839,16 +832,15 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
 align-self: center
 
 -- ftd.text: $hero-with-search-barV2.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -1011,17 +1003,16 @@ padding-vertical.px: 100
 -- ftd.column:
 width: fill-container
 max-width.fixed.px: $common.max-width 
+color: $inherited.colors.text-strong
 align-content: center
 
 -- ftd.text: $hero-cover.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 max-width.fixed.percent: 60
 text-align: center
 style: bold
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 60
 text-align: center
@@ -1082,17 +1073,16 @@ padding-vertical.px: 100
 -- ftd.column:
 width: fill-container
 max-width.fixed.px: $common.max-width 
+color: $inherited.colors.text-strong
 align-content: center
 
 -- ftd.text: $hero-cover-with-search-bar.title
-color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 max-width.fixed.percent: 60
 text-align: center
 style: bold
 
 -- ftd.text:
-color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 60
 text-align: center
