@@ -584,7 +584,7 @@ margin-top.px: 15
 
 -- ftd.row:
 spacing.fixed.px: 12
-margin-top.px: 25
+margin-top.px: 10
 
 -- search-bar: $hero-tertiary-with-search-bar.search-bar-placeholder
 
@@ -692,7 +692,7 @@ margin-top.px: 15
 
 -- ftd.row:
 spacing.fixed.px: 12
-margin-top.px: 25
+margin-top.px: 10
 align-content: center
 
 -- search-bar: $hero-tertiary-with-search-barV2.search-bar-placeholder
