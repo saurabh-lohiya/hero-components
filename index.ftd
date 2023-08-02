@@ -472,12 +472,12 @@ src: $hero-tertiaryV2.hero-image
 -- ftd.column:
 width.fixed.percent: 50
 width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text-strong
 align-content: center
 align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
+color: $inherited.colors.text-strong
 
 -- ftd.text: $hero-tertiaryV2.title
 role: $inherited.types.heading-large
