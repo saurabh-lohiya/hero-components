@@ -190,7 +190,7 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 spacing.fixed.px: 15
 align-self: center
 
@@ -276,7 +276,7 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 spacing.fixed.px: 15
 align-self: center
 
@@ -366,7 +366,7 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 
 -- ftd.text: $hero-tertiary.title
 role: $inherited.types.heading-large
@@ -477,7 +477,7 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 
 -- ftd.text: $hero-tertiaryV2.title
 role: $inherited.types.heading-large
@@ -558,7 +558,7 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 
 -- ftd.text: $hero-tertiary-with-search-bar.title
 role: $inherited.types.heading-large
@@ -665,7 +665,7 @@ align-self: center
 
 -- ftd.column:
 width.fixed.percent: 65
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 
 -- ftd.text: $hero-tertiary-with-search-barV2.title
 role: $inherited.types.heading-large
@@ -741,7 +741,7 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 align-self: center
 
 -- ftd.text: $hero-with-search-bar.title
@@ -832,7 +832,7 @@ spacing: space-between
 -- ftd.column:
 width.fixed.percent: 45
 width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 align-self: center
 
 -- ftd.text: $hero-with-search-barV2.title
@@ -923,7 +923,7 @@ border-radius.px: 6
 spacing.fixed.px: 12
 
 -- ftd.text: $button-solid.title
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 color if { button-solid.cta-hover }: $inherited.colors.text
 role: $inherited.types.copy-regular
 
@@ -1003,7 +1003,7 @@ padding-vertical.px: 100
 -- ftd.column:
 width: fill-container
 max-width.fixed.px: $common.max-width 
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 align-content: center
 
 -- ftd.text: $hero-cover.title
@@ -1073,7 +1073,7 @@ padding-vertical.px: 100
 -- ftd.column:
 width: fill-container
 max-width.fixed.px: $common.max-width 
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 align-content: center
 
 -- ftd.text: $hero-cover-with-search-bar.title
