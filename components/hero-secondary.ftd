@@ -1,18 +1,16 @@
--- import: saurabh-lohiya.github.io/hero/hero-secondary as he
-
 -- $site-doc.copyright-info: Copyright © 2023
 
 -- site-doc.doc-home: hero-secondary
 github-url: https://github.com/saurabh-lohiya/hero
 site-title: hero
 
--- site-doc.component-doc: `he.hero-secondary`
+-- site-doc.component-doc: `ds.hero-secondary`
 package-link: https://saurabh-lohiya.github.io/hero
 github-link: https://github.com/saurabh-lohiya/hero
 package-name: saurabh-lohiya.github.io/hero
-info: `-- he.hero-secondary` can be used as a hero component.
+info: `-- ds.hero-secondary` can be used as a hero component.
 
-`-- he.hero-secondary` contains, a image to the right side and information to the
+`-- ds.hero-secondary` contains, a image to the right side and information to the
 left side of it. If you want to use it on you gangaimaging.com pages then use
 below given example code and add it inside a `.ftd` file.
 
@@ -22,7 +20,7 @@ below given example code and add it inside a `.ftd` file.
 lang: ftd
 max-height.fixed.px: 350
 
-\-- he.hero-secondary:  We Transform ideas into digital outcomes.
+\-- ds.hero-secondary:  We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
 cta-primary-link: /
@@ -38,7 +36,7 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.output:
 
--- he.hero-secondary: We Transform ideas into digital outcomes.
+-- ds.hero-secondary: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
 cta-primary-link: /
@@ -54,7 +52,7 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- he.hero-secondary` component.
+Below are details of all properties of `-- ds.hero-secondary` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)

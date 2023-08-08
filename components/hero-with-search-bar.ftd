@@ -1,18 +1,16 @@
--- import: saurabh-lohiya.github.io/hero/hero-with-search-bar as he
-
 -- $site-doc.copyright-info: Copyright © 2023
 
 -- site-doc.doc-home: hero-with-search-bar
 github-url: https://github.com/saurabh-lohiya/hero
 site-title: hero
 
--- site-doc.component-doc: `he.hero-with-search-bar`
+-- site-doc.component-doc: `ds.hero-with-search-bar`
 package-link: https://saurabh-lohiya.github.io/hero
 github-link: https://github.com/saurabh-lohiya/hero
 package-name: saurabh-lohiya.github.io/hero
-info: `-- he.hero-with-search-bar` can be used as a hero component.
+info: `-- ds.hero-with-search-bar` can be used as a hero component.
 
-`-- he.hero-with-search-bar` contains, a image to the right side and information to the
+`-- ds.hero-with-search-bar` contains, a image to the right side and information to the
 left side of it. If you want to use it on you gangaimaging.com pages then use
 below given example code and add it inside a `.ftd` file.
 
@@ -22,7 +20,7 @@ below given example code and add it inside a `.ftd` file.
 lang: ftd
 max-height.fixed.px: 350
 
-\-- he.hero-with-search-bar:  We Transform ideas into digital outcomes.
+\-- ds.hero-with-search-bar:  We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
 cta-primary-link: /index.html
@@ -37,7 +35,7 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.output:
 
--- he.hero-with-search-bar: We Transform ideas into digital outcomes.
+-- ds.hero-with-search-bar: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
 cta-primary-link: /index.html
@@ -52,7 +50,7 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- he.hero-with-search-bar` component.
+Below are details of all properties of `-- ds.hero-with-search-bar` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)

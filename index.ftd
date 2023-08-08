@@ -1,18 +1,4 @@
 
--- import: saurabh-lohiya.github.io/hero/hero-secondary as hsec
--- import: saurabh-lohiya.github.io/hero/hero-tertiary as ht
--- import: saurabh-lohiya.github.io/hero/hero-tertiaryv2 as htv2
--- import: saurabh-lohiya.github.io/hero/hero-tertiary-with-search-bar as hts
--- import: saurabh-lohiya.github.io/hero/hero-tertiary-with-search-barv2 as htsv2
--- import: saurabh-lohiya.github.io/hero/hero-with-search-bar as hs
--- import: saurabh-lohiya.github.io/hero/hero-with-search-barV2 as hsv2
--- import: saurabh-lohiya.github.io/hero/hero-cover as hc
--- import: saurabh-lohiya.github.io/hero/hero-cover-with-search-bar as hcs
-
-
-
-
-
 
 -- component hero-primary:
 caption title:
@@ -28,8 +14,9 @@ ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -59,11 +46,11 @@ $hero-primary.body
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- common.button-solid: $hero-primary.cta-primary
+-- button-solid: $hero-primary.cta-primary
 cta-link: $hero-primary.cta-primary-link
 src: $hero-primary.cta-primary-icon
 
--- common.button-solid: $hero-primary.cta-secondary
+-- button-solid: $hero-primary.cta-secondary
 cta-link: $hero-primary.cta-secondary-link
 src: $hero-primary.cta-secondary-icon
 
@@ -114,12 +101,13 @@ ftd.image-src cta-secondary-icon:
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
+max-width.fixed.px:  $common.max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -145,11 +133,11 @@ $hero-secondary.body
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- common.button-solid: $hero-secondary.cta-primary
+-- button-solid: $hero-secondary.cta-primary
 cta-link: $hero-secondary.cta-primary-link
 src: $hero-secondary.cta-primary-icon
 
--- common.button-solid: $hero-secondary.cta-secondary
+-- button-solid: $hero-secondary.cta-secondary
 cta-link: $hero-secondary.cta-secondary-link
 src: $hero-secondary.cta-secondary-icon
 
@@ -200,8 +188,9 @@ ftd.image-src cta-secondary-icon:
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -234,11 +223,11 @@ $hero-tertiary.body
 spacing.fixed.px: 12
 margin-top.px: 25
 
--- common.button-solid: $hero-tertiary.cta-primary
+-- button-solid: $hero-tertiary.cta-primary
 cta-link: $hero-tertiary.cta-primary-link
 src: $hero-tertiary.cta-primary-icon
 
--- common.button-solid: $hero-tertiary.cta-secondary
+-- button-solid: $hero-tertiary.cta-secondary
 cta-link: $hero-tertiary.cta-secondary-link
 src: $hero-tertiary.cta-secondary-icon
 
@@ -297,8 +286,9 @@ ftd.image-src cta-secondary-icon:
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -345,11 +335,11 @@ $hero-tertiaryV2.body
 spacing.fixed.px: 12
 margin-top.px: 25
 
--- common.button-solid: $hero-tertiaryV2.cta-primary
+-- button-solid: $hero-tertiaryV2.cta-primary
 cta-link: $hero-tertiaryV2.cta-primary-link
 src: $hero-tertiaryV2.cta-primary-icon
 
--- common.button-solid: $hero-tertiaryV2.cta-secondary
+-- button-solid: $hero-tertiaryV2.cta-secondary
 cta-link: $hero-tertiaryV2.cta-secondary-link
 src: $hero-tertiaryV2.cta-secondary-icon
 
@@ -391,8 +381,9 @@ string search-bar-placeholder: Label
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -429,9 +420,9 @@ spacing.fixed.px: 12
 margin-top.px: 5
 align-content: center
 
--- common.search-bar: $hero-with-search-bar.search-bar-placeholder
+-- search-bar: $hero-with-search-bar.search-bar-placeholder
 
--- common.button-solid: $hero-with-search-bar.cta-primary
+-- button-solid: $hero-with-search-bar.cta-primary
 cta-link: $hero-with-search-bar.cta-primary-link
 src: $hero-with-search-bar.cta-primary-icon
 
@@ -482,8 +473,9 @@ string search-bar-placeholder:
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -520,9 +512,9 @@ spacing.fixed.px: 12
 margin-top.px: 5
 align-content: center
 
--- common.search-bar: $hero-with-search-barV2.search-bar-placeholder
+-- search-bar: $hero-with-search-barV2.search-bar-placeholder
 
--- common.button-solid: $hero-with-search-barV2.cta-primary
+-- button-solid: $hero-with-search-barV2.cta-primary
 cta-link: $hero-with-search-barV2.cta-primary-link
 src: $hero-with-search-barV2.cta-primary-icon
 
@@ -604,11 +596,11 @@ $hero-cover.body
 spacing.fixed.px: 12
 margin-top.px: 25
 
--- common.button-solid: $hero-cover.cta-primary
+-- button-solid: $hero-cover.cta-primary
 cta-link: $hero-cover.cta-primary-link
 src: $hero-cover.cta-primary-icon
 
--- common.button-solid: $hero-cover.cta-secondary
+-- button-solid: $hero-cover.cta-secondary
 cta-link: $hero-cover.cta-secondary-link
 src: $hero-cover.cta-secondary-icon
 
@@ -652,7 +644,7 @@ padding-vertical.px: 100
 
 -- ftd.column:
 width: fill-container
-max-width.fixed.px: $common.max-width 
+max-width.fixed.px:$common.max-width 
 color: $inherited.colors.text
 align-content: center
 
@@ -679,9 +671,9 @@ margin-top.px: 15
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- common.search-bar: $hero-cover-with-search-bar.search-bar-placeholder
+-- search-bar: $hero-cover-with-search-bar.search-bar-placeholder
 
--- common.button-solid: $hero-cover-with-search-bar.cta-primary
+-- button-solid: $hero-cover-with-search-bar.cta-primary
 cta-link: $hero-cover-with-search-bar.cta-primary-link
 src: $hero-cover-with-search-bar.cta-primary-icon
 
@@ -721,8 +713,9 @@ string search-bar-placeholder:
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -760,9 +753,9 @@ margin-top.px: 15
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- common.search-bar: $hero-tertiary-with-search-bar.search-bar-placeholder
+-- search-bar: $hero-tertiary-with-search-bar.search-bar-placeholder
 
--- common.button-solid: $hero-tertiary-with-search-bar.cta-primary
+-- button-solid: $hero-tertiary-with-search-bar.cta-primary
 cta-link: $hero-tertiary-with-search-bar.cta-primary-link
 src: $hero-tertiary-with-search-bar.cta-primary-icon
 
@@ -814,8 +807,9 @@ string search-bar-placeholder:
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -868,9 +862,9 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
--- common.search-bar: $hero-tertiary-with-search-barV2.search-bar-placeholder
+-- search-bar: $hero-tertiary-with-search-barV2.search-bar-placeholder
 
--- common.button-solid: $hero-tertiary-with-search-barV2.cta-primary
+-- button-solid: $hero-tertiary-with-search-barV2.cta-primary
 cta-link: $hero-tertiary-with-search-barV2.cta-primary-link
 src: $hero-tertiary-with-search-barV2.cta-primary-icon
 
@@ -885,3 +879,85 @@ src: $hero-tertiary-with-search-barV2.cta-primary-icon
 -- end: ftd.row
 
 -- end: hero-tertiary-with-search-barV2
+
+
+
+
+
+
+
+
+
+
+-- component button-solid:
+caption title:
+string cta-link:
+ftd.image-src src:
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+background.solid: $inherited.colors.cta-primary.base
+background.solid if { button-solid.cta-hover }: $inherited.colors.background.base
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-solid.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-solid.cta-hover, v = false)
+link: $button-solid.cta-link
+border-width.px: 2
+border-color: $inherited.colors.border
+border-color if { button-solid.cta-hover }: $inherited.colors.text-strong
+border-radius.px: 6
+spacing.fixed.px: 12
+
+-- ftd.text: $button-solid.title
+color: $inherited.colors.text
+color if { button-solid.cta-hover }: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.image:
+src: $button-solid.src
+height.fixed.px: 14
+width.fixed.px: 14
+
+-- end: ftd.row
+
+-- end: button-solid
+
+
+
+
+
+
+
+
+
+-- component search-bar:
+caption title:
+
+-- ftd.row:
+
+-- ftd.text-input:
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+placeholder: $search-bar.title
+padding-vertical.px: 10
+padding-horizontal.px: 8
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.image:
+anchor: parent
+src: $assets.files.assets.search.svg
+height.fixed.px: 18
+width.fixed.px: 18
+right.px: 15
+top.px: 12
+
+-- end: ftd.row
+
+-- end: search-bar

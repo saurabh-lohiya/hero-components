@@ -1,9 +1,7 @@
--- import: saurabh-lohiya.github.io/hero as he
+-- ds.page:
+full-width: true
 
--- ftd.column:
-width: fill-container
-
--- he.hero-secondary: We Transform ideas into digital outcomes.
+-- ds.hero-secondary: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
 cta-primary-link: /index.html
@@ -15,4 +13,4 @@ cta-secondary-icon: $assets.files.assets.check-solid.svg
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
 
--- end: ftd.column
+-- end: ds.page
