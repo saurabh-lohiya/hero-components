@@ -1,2 +1,79 @@
-
 -- integer max-width: 1180
+
+
+
+
+
+
+-- component button-solid:
+caption title:
+string cta-link:
+ftd.image-src src:
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+background.solid: $inherited.colors.cta-primary.base
+background.solid if { button-solid.cta-hover }: $inherited.colors.background.base
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-solid.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-solid.cta-hover, v = false)
+link: $button-solid.cta-link
+border-width.px: 2
+border-color: $inherited.colors.border
+border-color if { button-solid.cta-hover }: $inherited.colors.text-strong
+border-radius.px: 6
+spacing.fixed.px: 12
+
+-- ftd.text: $button-solid.title
+color: $inherited.colors.text
+color if { button-solid.cta-hover }: $inherited.colors.text
+role: $inherited.types.copy-regular
+
+-- ftd.image:
+src: $button-solid.src
+height.fixed.px: 14
+width.fixed.px: 14
+
+-- end: ftd.row
+
+-- end: button-solid
+
+
+
+
+
+
+
+
+
+-- component search-bar:
+caption title:
+
+-- ftd.row:
+
+-- ftd.text-input:
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+placeholder: $search-bar.title
+padding-vertical.px: 10
+padding-horizontal.px: 8
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.image:
+anchor: parent
+src: $assets.files.assets.search.svg
+height.fixed.px: 18
+width.fixed.px: 18
+right.px: 15
+top.px: 12
+
+-- end: ftd.row
+
+-- end: search-bar

@@ -1,0 +1,113 @@
+-- import: saurabh-lohiya.github.io/hero/hero-secondary as he
+
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: hero-secondary
+github-url: https://github.com/saurabh-lohiya/hero
+site-title: hero
+
+-- site-doc.component-doc: `he.hero-secondary`
+package-link: https://saurabh-lohiya.github.io/hero
+github-link: https://github.com/saurabh-lohiya/hero
+package-name: saurabh-lohiya.github.io/hero
+info: `-- he.hero-secondary` can be used as a hero component.
+
+`-- he.hero-secondary` contains, a image to the right side and information to the
+left side of it. If you want to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- he.hero-secondary:  We Transform ideas into digital outcomes.
+hero-image: $assets.files.assets.hero-img.jpg
+cta-primary: Button
+cta-primary-link: /
+cta-primary-icon: $assets.files.assets.check-solid.svg
+cta-secondary: Button
+cta-secondary-link: /
+cta-secondary-icon: $assets.files.assets.check-solid.svg
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- he.hero-secondary: We Transform ideas into digital outcomes.
+hero-image: $assets.files.assets.hero-img.jpg
+cta-primary: Button
+cta-primary-link: /
+cta-primary-icon: $assets.files.assets.check-solid.svg
+cta-secondary: Button
+cta-secondary-link: /
+cta-secondary-icon: $assets.files.assets.check-solid.svg
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- he.hero-secondary` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It’s used to add a
+title to `hero` component.
+
+-- site-doc.component-property: `body`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It’s used to add a
+body to `hero` component.
+
+-- site-doc.component-property: `hero-image`
+type: ftd.image-src (`required`)
+
+This is a default property of the `hero` component. Using `hero-image`
+attribute image can be added.
+
+-- site-doc.component-property: `cta-primary`
+type: String (`required`)
+
+This is a default property of the `hero` component. It’s used to add a
+click to action button title.
+
+-- site-doc.component-property: `cta-primary-link`
+type: String (`optional`)
+
+This is a default property of the `hero` component. It’s used to add a
+link to click to action button.
+
+-- site-doc.component-property: `cta-primary-icon`
+type: String (`optional`)
+
+This is a default property of the `hero` component. It’s used to add a
+icon in the button.
+
+-- site-doc.component-property: `cta-secondary`
+type: String (`required`)
+
+This is a default property of the `hero` component. It’s used to add a
+click to action button title.
+
+-- site-doc.component-property: `cta-secondary-link`
+type: String (`optional`)
+
+This is a default property of the `hero` component. It’s used to add a
+link to click to action button.
+
+-- site-doc.component-property: `cta-secondary-icon`
+type: String (`optional`)
+
+This is a default property of the `hero` component. It’s used to add a
+icon in the button.
+
+-- end: site-doc.doc-home

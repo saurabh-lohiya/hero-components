@@ -3,12 +3,15 @@
 -- ftd.column:
 width: fill-container
 
--- he.hero-primary: We Transform ideas into digital outcomes.
+-- he.hero-cover-with-search-bar: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
-cta-secondary: Button
+cta-primary-link: /index.html
+cta-primary-icon: $assets.files.assets.check-solid.svg
+tag: Short Headline
+search-bar-placeholder: Label
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
 
--- end: ftd.column
+-- end: ftd.column 
