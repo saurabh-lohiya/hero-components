@@ -1,161 +1,17 @@
--- import: saurabh-lohiya.github.io/hero/common
+-- integer max-width: 1180
 
--- ftd.column:
-width: fill-container
+-- ds.page:
+full-width: true
 
--- hero-primary: We Transform ideas into digital outcomes.
+-- ds.hero-primary: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
 cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
 
-
-
-
-
--- hero-secondary: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
-
--- hero-tertiary: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
-label: Small Incidental Text
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
-
--- hero-tertiary-with-search-bar: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-tag: Small Headline
-search-bar-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
-
--- hero-tertiary-with-search-barV2: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-tag: Small Headline
-search-bar-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
-
--- hero-tertiaryV2: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
-label: Small Incidental Text
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
-
--- hero-with-search-bar: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-tag: Short Headline
-search-bar-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
-
--- hero-with-search-barV2: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-tag: Short Headline
-label: Small Incidental Line
-search-bar-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
--- hero-cover: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
-
-
-
--- hero-cover-with-search-bar: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-tag: Short Headline
-search-bar-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
--- end: ftd.column
+-- end: ds.page
 
 
 
@@ -168,21 +24,22 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html 
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
-ftd.image-src cta-secondary-icon:
+string cta-secondary-link: index.html 
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
+max-width.fixed.px: $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -254,21 +111,22 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
-ftd.image-src cta-secondary-icon:
+string cta-secondary-link: index.html
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
+max-width.fixed.px:  $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -334,24 +192,24 @@ src: $hero-secondary.hero-image
 
 
 
-
 -- component hero-tertiary:
 caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
+string cta-secondary-link: index.html
 string label:
-ftd.image-src cta-secondary-icon:
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -437,18 +295,19 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
+string cta-secondary-link: index.html
 string label:
-ftd.image-src cta-secondary-icon:
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -528,22 +387,354 @@ margin-top.px: 10
 
 
 
+-- component hero-with-search-bar:
+caption title:
+body body:
+ftd.image-src hero-image:
+string cta-primary:
+string cta-primary-link: index.html 
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
+string tag:
+string search-bar-placeholder: Label
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 45
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+align-self: center
+
+-- ftd.text: $hero-with-search-bar.title
+role: $inherited.types.heading-large
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-with-search-bar.body
+
+-- ftd.text: $hero-with-search-bar.tag
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 5
+align-content: center
+
+-- search-bar: $hero-with-search-bar.search-bar-placeholder
+
+-- button-solid: $hero-with-search-bar.cta-primary
+cta-link: $hero-with-search-bar.cta-primary-link
+src: $hero-with-search-bar.cta-primary-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 480
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-with-search-bar.hero-image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-with-search-bar
+
+
+
+
+
+
+
+
+
+
+-- component hero-with-search-barV2:
+caption title:
+body body:
+ftd.image-src hero-image:
+string cta-primary:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
+string tag:
+string label:
+string search-bar-placeholder:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 45
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+align-self: center
+
+-- ftd.text: $hero-with-search-barV2.title
+role: $inherited.types.heading-large
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-with-search-barV2.body
+
+-- ftd.text: $hero-with-search-barV2.tag
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 5
+align-content: center
+
+-- search-bar: $hero-with-search-barV2.search-bar-placeholder
+
+-- button-solid: $hero-with-search-barV2.cta-primary
+cta-link: $hero-with-search-barV2.cta-primary-link
+src: $hero-with-search-barV2.cta-primary-icon
+
+-- end: ftd.row
+
+-- ftd.text: $hero-with-search-barV2.label
+color: $inherited.colors.text
+role: $inherited.types.label-small
+margin-top.px: 5
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 480
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-with-search-barV2.hero-image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-with-search-barV2
+
+
+
+
+
+
+
+
+
+
+-- component hero-cover:
+caption title:
+body body:
+ftd.image-src hero-image:
+string cta-primary:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
+string cta-secondary:
+string cta-secondary-link: index.html
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width 
+color: $inherited.colors.text
+align-content: center
+
+-- ftd.text: $hero-cover.title
+role: $inherited.types.heading-large
+max-width.fixed.percent: 60
+text-align: center
+style: bold
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 60
+text-align: center
+margin-top.px: 15
+
+$hero-cover.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 25
+
+-- button-solid: $hero-cover.cta-primary
+cta-link: $hero-cover.cta-primary-link
+src: $hero-cover.cta-primary-icon
+
+-- button-solid: $hero-cover.cta-secondary
+cta-link: $hero-cover.cta-secondary-link
+src: $hero-cover.cta-secondary-icon
+
+-- end: ftd.row
+
+-- ftd.image:
+width: fill-container
+height.fixed.px: 680
+src: $hero-cover.hero-image
+margin-top.px: 30
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-cover
+
+
+
+
+
+
+
+
+
+
+-- component hero-cover-with-search-bar:
+caption title:
+body body:
+ftd.image-src hero-image:
+string cta-primary:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
+string tag:
+string search-bar-placeholder:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width 
+color: $inherited.colors.text
+align-content: center
+
+-- ftd.text: $hero-cover-with-search-bar.title
+role: $inherited.types.heading-large
+max-width.fixed.percent: 60
+text-align: center
+style: bold
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 60
+text-align: center
+margin-top.px: 15
+
+$hero-cover-with-search-bar.body
+
+-- ftd.text: $hero-cover-with-search-bar.tag
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- search-bar: $hero-cover-with-search-bar.search-bar-placeholder
+
+-- button-solid: $hero-cover-with-search-bar.cta-primary
+cta-link: $hero-cover-with-search-bar.cta-primary-link
+src: $hero-cover-with-search-bar.cta-primary-icon
+
+-- end: ftd.row
+
+-- ftd.image:
+width: fill-container
+height.fixed.px: 680
+src: $hero-cover-with-search-bar.hero-image
+margin-top.px: 30
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-cover-with-search-bar
+
+
+
+
+
+
+
+
+
 
 -- component hero-tertiary-with-search-bar:
 caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
 string search-bar-placeholder:
 
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -627,16 +818,17 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
-string tag:
-string search-bar-placeholder:
+string cta-primary-link: index.html 
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
+string tag: Small Headline
+string search-bar-placeholder: Label
 
 -- ftd.row:
 width: fill-container
 align-content: center
-height.fixed.vh: 100
+height: fill-container
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
@@ -715,191 +907,6 @@ src: $hero-tertiary-with-search-barV2.cta-primary-icon
 
 
 
--- component hero-with-search-bar:
-caption title:
-body body:
-ftd.image-src hero-image:
-string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
-string tag:
-string search-bar-placeholder:
-
--- ftd.row:
-width: fill-container
-align-content: center
-height.fixed.vh: 100
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-
--- ftd.row:
-width: fill-container
-max-width.fixed.px: $common.max-width
-height: fill-container
-wrap: true
-spacing: space-between
-
--- ftd.column:
-width.fixed.percent: 45
-width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $hero-with-search-bar.title
-role: $inherited.types.heading-large
-style: bold
-margin-top.px: 15
-
--- ftd.text:
-role: $inherited.types.copy-regular
-max-width.fixed.percent: 90
-margin-top.px: 15
-
-$hero-with-search-bar.body
-
--- ftd.text: $hero-with-search-bar.tag
-color: $inherited.colors.text
-role: $inherited.types.copy-small
-margin-top.px: 15
-
--- ftd.row:
-spacing.fixed.px: 12
-margin-top.px: 5
-align-content: center
-
--- search-bar: $hero-with-search-bar.search-bar-placeholder
-
--- button-solid: $hero-with-search-bar.cta-primary
-cta-link: $hero-with-search-bar.cta-primary-link
-src: $hero-with-search-bar.cta-primary-icon
-
--- end: ftd.row
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.percent: 50
-height.fixed.px: 480
-width if { ftd.device == "mobile" }: fill-container
-align-self: center
-margin-vertical.px if { ftd.device == "mobile" }: 30
-
--- ftd.image:
-width: fill-container
-height: fill-container
-src: $hero-with-search-bar.hero-image
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: hero-with-search-bar
-
-
-
-
-
-
-
-
-
-
--- component hero-with-search-barV2:
-caption title:
-body body:
-ftd.image-src hero-image:
-string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
-string tag:
-string label:
-string search-bar-placeholder:
-
--- ftd.row:
-width: fill-container
-align-content: center
-height.fixed.vh: 100
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-
--- ftd.row:
-width: fill-container
-max-width.fixed.px: $common.max-width
-height: fill-container
-wrap: true
-spacing: space-between
-
--- ftd.column:
-width.fixed.percent: 45
-width if { ftd.device == "mobile" }: fill-container
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $hero-with-search-barV2.title
-role: $inherited.types.heading-large
-style: bold
-margin-top.px: 15
-
--- ftd.text:
-role: $inherited.types.copy-regular
-max-width.fixed.percent: 90
-margin-top.px: 15
-
-$hero-with-search-barV2.body
-
--- ftd.text: $hero-with-search-barV2.tag
-color: $inherited.colors.text
-role: $inherited.types.copy-small
-margin-top.px: 15
-
--- ftd.row:
-spacing.fixed.px: 12
-margin-top.px: 5
-align-content: center
-
--- search-bar: $hero-with-search-barV2.search-bar-placeholder
-
--- button-solid: $hero-with-search-barV2.cta-primary
-cta-link: $hero-with-search-barV2.cta-primary-link
-src: $hero-with-search-barV2.cta-primary-icon
-
--- end: ftd.row
-
--- ftd.text: $hero-with-search-barV2.label
-color: $inherited.colors.text
-role: $inherited.types.label-small
-margin-top.px: 5
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.percent: 50
-height.fixed.px: 480
-width if { ftd.device == "mobile" }: fill-container
-align-self: center
-margin-vertical.px if { ftd.device == "mobile" }: 30
-
--- ftd.image:
-width: fill-container
-height: fill-container
-src: $hero-with-search-barV2.hero-image
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: hero-with-search-barV2
-
-
-
-
-
-
-
-
-
 
 -- component button-solid:
 caption title:
@@ -944,7 +951,6 @@ width.fixed.px: 14
 
 
 
-
 -- component search-bar:
 caption title:
 
@@ -974,147 +980,3 @@ top.px: 12
 -- end: ftd.row
 
 -- end: search-bar
-
-
-
-
-
-
-
-
-
-
--- component hero-cover:
-caption title:
-body body:
-ftd.image-src hero-image:
-string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
-string cta-secondary:
-string cta-secondary-link:
-ftd.image-src cta-secondary-icon:
-
--- ftd.column:
-width: fill-container
-align-content: center
-padding-vertical.px: 100
-
--- ftd.column:
-width: fill-container
-max-width.fixed.px: $common.max-width 
-color: $inherited.colors.text
-align-content: center
-
--- ftd.text: $hero-cover.title
-role: $inherited.types.heading-large
-max-width.fixed.percent: 60
-text-align: center
-style: bold
-
--- ftd.text:
-role: $inherited.types.copy-regular
-max-width.fixed.percent: 60
-text-align: center
-margin-top.px: 15
-
-$hero-cover.body
-
--- ftd.row:
-spacing.fixed.px: 12
-margin-top.px: 25
-
--- button-solid: $hero-cover.cta-primary
-cta-link: $hero-cover.cta-primary-link
-src: $hero-cover.cta-primary-icon
-
--- button-solid: $hero-cover.cta-secondary
-cta-link: $hero-cover.cta-secondary-link
-src: $hero-cover.cta-secondary-icon
-
--- end: ftd.row
-
--- ftd.image:
-width: fill-container
-height.fixed.px: 680
-src: $hero-cover.hero-image
-margin-top.px: 30
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: hero-cover
-
-
-
-
-
-
-
-
-
-
--- component hero-cover-with-search-bar:
-caption title:
-body body:
-ftd.image-src hero-image:
-string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
-string tag:
-string search-bar-placeholder:
-
--- ftd.column:
-width: fill-container
-align-content: center
-padding-vertical.px: 100
-
--- ftd.column:
-width: fill-container
-max-width.fixed.px: $common.max-width 
-color: $inherited.colors.text
-align-content: center
-
--- ftd.text: $hero-cover-with-search-bar.title
-role: $inherited.types.heading-large
-max-width.fixed.percent: 60
-text-align: center
-style: bold
-
--- ftd.text:
-role: $inherited.types.copy-regular
-max-width.fixed.percent: 60
-text-align: center
-margin-top.px: 15
-
-$hero-cover-with-search-bar.body
-
--- ftd.text: $hero-cover-with-search-bar.tag
-color: $inherited.colors.text
-role: $inherited.types.copy-small
-margin-top.px: 15
-
--- ftd.row:
-spacing.fixed.px: 12
-margin-top.px: 10
-
--- search-bar: $hero-cover-with-search-bar.search-bar-placeholder
-
--- button-solid: $hero-cover-with-search-bar.cta-primary
-cta-link: $hero-cover-with-search-bar.cta-primary-link
-src: $hero-cover-with-search-bar.cta-primary-icon
-
--- end: ftd.row
-
--- ftd.image:
-width: fill-container
-height.fixed.px: 680
-src: $hero-cover-with-search-bar.hero-image
-margin-top.px: 30
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: hero-cover-with-search-bar
