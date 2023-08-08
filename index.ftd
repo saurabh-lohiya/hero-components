@@ -1,4 +1,4 @@
-
+-- integer max-width: 1180
 
 -- component hero-primary:
 caption title:
@@ -20,7 +20,7 @@ padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
+max-width.fixed.px: $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -107,7 +107,7 @@ padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px:  $common.max-width
+max-width.fixed.px:  $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -387,7 +387,7 @@ padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
+max-width.fixed.px: $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -479,7 +479,7 @@ padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
+max-width.fixed.px: $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -574,7 +574,7 @@ padding-vertical.px: 100
 
 -- ftd.column:
 width: fill-container
-max-width.fixed.px: $common.max-width 
+max-width.fixed.px: $max-width 
 color: $inherited.colors.text
 align-content: center
 
@@ -644,7 +644,7 @@ padding-vertical.px: 100
 
 -- ftd.column:
 width: fill-container
-max-width.fixed.px:$common.max-width 
+max-width.fixed.px: $max-width 
 color: $inherited.colors.text
 align-content: center
 
