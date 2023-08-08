@@ -1,14 +1,33 @@
 -- integer max-width: 1180
 
+-- ds.page:
+full-width: true
+
+-- ds.hero-primary: We Transform ideas into digital outcomes.
+hero-image: $assets.files.assets.hero-img.jpg
+cta-primary: Button
+cta-secondary: Button
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- end: ds.page
+
+
+
+
+
+
+
 -- component hero-primary:
 caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link: /index.html
+string cta-primary-link: index.html 
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link: /index.html
+string cta-secondary-link: index.html 
 ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
@@ -92,11 +111,11 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
-ftd.image-src cta-secondary-icon:
+string cta-secondary-link: index.html
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
@@ -178,12 +197,12 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
+string cta-secondary-link: index.html
 string label:
-ftd.image-src cta-secondary-icon:
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
@@ -276,12 +295,12 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
+string cta-secondary-link: index.html
 string label:
-ftd.image-src cta-secondary-icon:
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.row:
 width: fill-container
@@ -373,7 +392,7 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link: /index.html
+string cta-primary-link: index.html 
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
 string search-bar-placeholder: Label
@@ -464,8 +483,8 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
 string label:
 string search-bar-placeholder:
@@ -561,11 +580,11 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string cta-secondary:
-string cta-secondary-link:
-ftd.image-src cta-secondary-icon:
+string cta-secondary-link: index.html
+ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.column:
 width: fill-container
@@ -632,8 +651,8 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
 string search-bar-placeholder:
 
@@ -705,8 +724,8 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
+string cta-primary-link: index.html
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
 string search-bar-placeholder:
 
@@ -799,10 +818,10 @@ caption title:
 body body:
 ftd.image-src hero-image:
 string cta-primary:
-string cta-primary-link:
-ftd.image-src cta-primary-icon:
-string tag:
-string search-bar-placeholder:
+string cta-primary-link: index.html 
+ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
+string tag: Small Headline
+string search-bar-placeholder: Label
 
 -- ftd.row:
 width: fill-container

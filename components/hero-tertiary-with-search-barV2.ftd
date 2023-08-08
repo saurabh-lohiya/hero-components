@@ -23,8 +23,6 @@ max-height.fixed.px: 350
 \-- ds.hero-tertiary-with-search-barV2:  We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
-cta-primary-link: /index.html
-cta-primary-icon: $assets.files.assets.check-solid.svg
 tag: Small Headline
 search-bar-placeholder: Label
 
@@ -38,8 +36,6 @@ consultancy services and help you create outstanding digital products.
 -- ds.hero-tertiary-with-search-barV2: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
-cta-primary-link: /index.html
-cta-primary-icon: $assets.files.assets.check-solid.svg
 tag: Small Headline
 search-bar-placeholder: Label
 

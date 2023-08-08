@@ -4,8 +4,6 @@ full-width: true
 -- ds.hero-with-search-barV2: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
-cta-primary-link: /index.html
-cta-primary-icon: $assets.files.assets.check-solid.svg
 tag: Short Headline
 label: Small Incidental Line
 search-bar-placeholder: Label
