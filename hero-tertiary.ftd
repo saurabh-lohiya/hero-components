@@ -1,0 +1,13 @@
+-- ds.page:
+full-width: true
+
+-- ds.hero-tertiary: We Transform ideas into digital outcomes.
+hero-image: $assets.files.assets.hero-img.jpg
+cta-primary: Button
+cta-secondary: Button
+label: Small Incidental Text
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- end: ds.page

@@ -5,6 +5,9 @@
 -- import: fastn-community.github.io/doc-site/
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
 
+-- import: saurabh-lohiya.github.io/hero/
+export: hero-primary, hero-secondary, hero-tertiary, hero-with-search-bar, hero-with-search-barV2, hero-cover, hero-tertiary-with-search-bar, hero-tertiary-with-search-barV2, hero-tertiaryV2, hero-cover-with-search-bar
+
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
 
 -- component page:
