@@ -20,26 +20,26 @@ favicon: /-/saurabh-lohiya.github.io/hero/favicon.ico
 
 # Home: index.html
 
-- Hero Primary: hero-primary/
-- Hero Secondary: hero-secondary/
-- Hero Tertiary: hero-tertiary/
-- Hero Tertiary V2: hero-tertiaryv2/
-- Hero With Search Bar: hero-with-search-bar/
-- Hero With Search Bar V2: hero-with-search-barv2/
-- Hero Cover: hero-cover/
-- Hero Cover With Search Bar: hero-cover-with-search-bar/
-- Hero Tertiary With Search Bar: hero-tertiary-with-search-bar/
-- Hero Tertiary With Search Bar V2: hero-tertiary-with-search-barv2/
+- Hero Primary: /hero-primary/
+- Hero Secondary: /hero-secondary/
+- Hero Tertiary: /hero-tertiary/
+- Hero Tertiary V2: /hero-tertiaryv2/
+- Hero With Search Bar: /hero-with-search-bar/
+- Hero With Search Bar V2: /hero-with-search-barv2/
+- Hero Cover: /hero-cover/
+- Hero Cover With Search Bar: /hero-cover-with-search-bar/
+- Hero Tertiary With Search Bar: /hero-tertiary-with-search-bar/
+- Hero Tertiary With Search Bar V2: /hero-tertiary-with-search-barv2/
 
 # Doc: components/
 
-- Hero Primary: components/hero-primary/
-- Hero Secondary: components/hero-secondary/
-- Hero Tertiary: components/hero-tertiary/
-- Hero Tertiary V2: components/hero-tertiaryv2/
-- Hero With Search Bar: components/hero-with-search-bar/
-- Hero With Search Bar V2: components/hero-with-search-barv2/
-- Hero Cover: components/hero-cover/
-- Hero Cover With Search Bar: components/hero-cover-with-search-bar/
-- Hero Tertiary With Search Bar: components/hero-tertiary-with-search-bar/
-- Hero Tertiary With Search Bar V2: components/hero-tertiary-with-search-barv2/
+- Hero Primary: /components/hero-primary/
+- Hero Secondary: /components/hero-secondary/
+- Hero Tertiary: /components/hero-tertiary/
+- Hero Tertiary V2: /components/hero-tertiaryv2/
+- Hero With Search Bar: /components/hero-with-search-bar/
+- Hero With Search Bar V2: /components/hero-with-search-barv2/
+- Hero Cover: /components/hero-cover/
+- Hero Cover With Search Bar: /components/hero-cover-with-search-bar/
+- Hero Tertiary With Search Bar: /components/hero-tertiary-with-search-bar/
+- Hero Tertiary With Search Bar V2: /components/hero-tertiary-with-search-barv2/
