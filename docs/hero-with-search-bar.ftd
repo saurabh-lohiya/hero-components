@@ -2,32 +2,8 @@
 
 -- site-doc.doc-home: hero-with-search-bar
 github-url: https://github.com/saurabh-lohiya/hero
+current-package: saurabh-lohiya.github.io/hero
 site-title: hero
-
--- site-doc.component-doc: `ds.hero-with-search-bar`
-package-link: https://saurabh-lohiya.github.io/hero
-github-link: https://github.com/saurabh-lohiya/hero
-package-name: saurabh-lohiya.github.io/hero
-info: `-- ds.hero-with-search-bar` can be used as a hero component.
-
-`-- ds.hero-with-search-bar` contains, a image to the right side and information to the
-left side of it. If you want to use it on you gangaimaging.com pages then use
-below given example code and add it inside a `.ftd` file.
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-max-height.fixed.px: 350
-
-\-- ds.hero-with-search-bar:  We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Small Headline
-search-bar-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Demo:
 
@@ -43,6 +19,26 @@ We are an award-winning strategic design company that provides
 consultancy services and help you create outstanding digital products.
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- ds.hero-with-search-bar` contains, a image to the right side and information to the
+left side of it. If you want to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.hero-with-search-bar:  We Transform ideas into digital outcomes.
+hero-image: $assets.files.assets.hero-img.jpg
+cta-primary: Button
+tag: Small Headline
+search-bar-placeholder: Label
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 
