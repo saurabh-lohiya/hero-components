@@ -2,13 +2,24 @@
 
 -- site-doc.doc-home: hero-with-search-barV2
 github-url: https://github.com/saurabh-lohiya/hero
+current-package: saurabh-lohiya.github.io/hero
 site-title: hero
 
--- site-doc.component-doc: `ds.hero-with-search-barV2`
-package-link: https://saurabh-lohiya.github.io/hero
-github-link: https://github.com/saurabh-lohiya/hero
-package-name: saurabh-lohiya.github.io/hero
-info: `-- ds.hero-with-search-barV2` can be used as a hero component.
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.hero-with-search-barV2: We Transform ideas into digital outcomes.
+hero-image: $assets.files.assets.hero-img.jpg
+cta-primary: Button
+tag: Small Headline
+search-bar-placeholder: Label
+label: Small Incidental Text
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- site-doc.header: Overview:
 
 `-- ds.hero-with-search-barV2` contains, a image to the right side and information to the
 left side of it. If you want to use it on you gangaimaging.com pages then use
@@ -21,20 +32,6 @@ lang: ftd
 max-height.fixed.px: 350
 
 \-- ds.hero-with-search-barV2:  We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Small Headline
-search-bar-placeholder: Label
-label: Small Incidental Text
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
--- site-doc.header: Demo:
-
--- site-doc.output:
-
--- ds.hero-with-search-barV2: We Transform ideas into digital outcomes.
 hero-image: $assets.files.assets.hero-img.jpg
 cta-primary: Button
 tag: Small Headline
