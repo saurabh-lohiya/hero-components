@@ -78,13 +78,13 @@ This is a default property of the `hero` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-primary-link`
-type: String (`optional`)
+type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
 -- site-doc.component-property: `cta-primary-icon`
-type: String (`optional`)
+type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 icon in the button.
@@ -96,13 +96,13 @@ This is a default property of the `hero` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-secondary-link`
-type: String (`optional`)
+type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
 -- site-doc.component-property: `cta-secondary-icon`
-type: String (`optional`)
+type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 icon in the button.
