@@ -72,7 +72,7 @@ This is a default property of the `hero` component. Using `hero-image`
 attribute image can be added.
 
 -- site-doc.component-property: `cta-primary`
-type: String (`required`)
+type: String (`optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
@@ -90,7 +90,7 @@ This is a default property of the `hero` component. It’s used to add a
 icon in the button.
 
 -- site-doc.component-property: `cta-secondary`
-type: String (`required`)
+type: String (`optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.

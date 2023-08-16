@@ -50,10 +50,10 @@ lang: ftd
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html 
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
-string cta-secondary:
+optional string cta-secondary:
 string cta-secondary-link: index.html 
 ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
@@ -93,10 +93,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 
 -- button-solid: $hero-primary.cta-primary
+if: { hero-primary.cta-primary != NULL }
 cta-link: $hero-primary.cta-primary-link
 src: $hero-primary.cta-primary-icon
 
 -- button-solid: $hero-primary.cta-secondary
+if: { hero-primary.cta-secondary != NULL }
 cta-link: $hero-primary.cta-secondary-link
 src: $hero-primary.cta-secondary-icon
 
@@ -137,10 +139,10 @@ src: $hero-primary.hero-image
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
-string cta-secondary:
+optional string cta-secondary:
 string cta-secondary-link: index.html
 ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
@@ -180,10 +182,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 
 -- button-solid: $hero-secondary.cta-primary
+if: { hero-secondary.cta-primary != NULL }
 cta-link: $hero-secondary.cta-primary-link
 src: $hero-secondary.cta-primary-icon
 
 -- button-solid: $hero-secondary.cta-secondary
+if: { hero-secondary.cta-secondary != NULL }
 cta-link: $hero-secondary.cta-secondary-link
 src: $hero-secondary.cta-secondary-icon
 
@@ -223,10 +227,10 @@ src: $hero-secondary.hero-image
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
-string cta-secondary:
+optional string cta-secondary:
 string cta-secondary-link: index.html
 string label:
 ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
@@ -270,10 +274,12 @@ spacing.fixed.px: 12
 margin-top.px: 25
 
 -- button-solid: $hero-tertiary.cta-primary
+if: { hero-tertiary.cta-primary != NULL }
 cta-link: $hero-tertiary.cta-primary-link
 src: $hero-tertiary.cta-primary-icon
 
 -- button-solid: $hero-tertiary.cta-secondary
+if: { hero-tertiary.cta-secondary != NULL }
 cta-link: $hero-tertiary.cta-secondary-link
 src: $hero-tertiary.cta-secondary-icon
 
@@ -321,10 +327,10 @@ src: $hero-tertiary.hero-image
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
-string cta-secondary:
+optional string cta-secondary:
 string cta-secondary-link: index.html
 string label:
 ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
@@ -382,10 +388,12 @@ spacing.fixed.px: 12
 margin-top.px: 25
 
 -- button-solid: $hero-tertiaryV2.cta-primary
+if: { hero-tertiaryV2.cta-primary != NULL }
 cta-link: $hero-tertiaryV2.cta-primary-link
 src: $hero-tertiaryV2.cta-primary-icon
 
 -- button-solid: $hero-tertiaryV2.cta-secondary
+if: { hero-tertiaryV2.cta-secondary != NULL }
 cta-link: $hero-tertiaryV2.cta-secondary-link
 src: $hero-tertiaryV2.cta-secondary-icon
 
@@ -418,7 +426,7 @@ margin-top.px: 10
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html 
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
@@ -469,6 +477,7 @@ align-content: center
 -- search-bar: $hero-with-search-bar.search-bar-placeholder
 
 -- button-solid: $hero-with-search-bar.cta-primary
+if: { hero-with-search-bar.cta-primary != NULL }
 cta-link: $hero-with-search-bar.cta-primary-link
 src: $hero-with-search-bar.cta-primary-icon
 
@@ -509,7 +518,7 @@ src: $hero-with-search-bar.hero-image
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
@@ -561,6 +570,7 @@ align-content: center
 -- search-bar: $hero-with-search-barV2.search-bar-placeholder
 
 -- button-solid: $hero-with-search-barV2.cta-primary
+if: { hero-with-search-barV2.cta-primary }
 cta-link: $hero-with-search-barV2.cta-primary-link
 src: $hero-with-search-barV2.cta-primary-icon
 
@@ -606,10 +616,10 @@ src: $hero-with-search-barV2.hero-image
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
-string cta-secondary:
+optional string cta-secondary:
 string cta-secondary-link: index.html
 ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
 
@@ -643,10 +653,12 @@ spacing.fixed.px: 12
 margin-top.px: 25
 
 -- button-solid: $hero-cover.cta-primary
+if: { hero-cover.cta-primary != NULL }
 cta-link: $hero-cover.cta-primary-link
 src: $hero-cover.cta-primary-icon
 
 -- button-solid: $hero-cover.cta-secondary
+if: { hero-cover.cta-secondary != NULL }
 cta-link: $hero-cover.cta-secondary-link
 src: $hero-cover.cta-secondary-icon
 
@@ -677,7 +689,7 @@ margin-top.px: 30
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
@@ -720,6 +732,7 @@ margin-top.px: 10
 -- search-bar: $hero-cover-with-search-bar.search-bar-placeholder
 
 -- button-solid: $hero-cover-with-search-bar.cta-primary
+if: { hero-cover-with-search-bar.cta-primary != NULL }
 cta-link: $hero-cover-with-search-bar.cta-primary-link
 src: $hero-cover-with-search-bar.cta-primary-icon
 
@@ -750,7 +763,7 @@ margin-top.px: 30
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag:
@@ -802,6 +815,7 @@ margin-top.px: 10
 -- search-bar: $hero-tertiary-with-search-bar.search-bar-placeholder
 
 -- button-solid: $hero-tertiary-with-search-bar.cta-primary
+if: { hero-tertiary-with-search-bar.cta-primary != NULL }
 cta-link: $hero-tertiary-with-search-bar.cta-primary-link
 src: $hero-tertiary-with-search-bar.cta-primary-icon
 
@@ -844,7 +858,7 @@ src: $hero-tertiary-with-search-bar.hero-image
 caption title:
 body body:
 ftd.image-src hero-image:
-string cta-primary:
+optional string cta-primary:
 string cta-primary-link: index.html 
 ftd.image-src cta-primary-icon: $assets.files.assets.check-solid.svg
 string tag: Small Headline
@@ -911,6 +925,7 @@ align-content: center
 -- search-bar: $hero-tertiary-with-search-barV2.search-bar-placeholder
 
 -- button-solid: $hero-tertiary-with-search-barV2.cta-primary
+if: { hero-tertiary-with-search-barV2.cta-primary != NULL }
 cta-link: $hero-tertiary-with-search-barV2.cta-primary-link
 src: $hero-tertiary-with-search-barV2.cta-primary-icon
 
