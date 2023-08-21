@@ -2,10 +2,10 @@
 full-width: true
 
 -- ds.hero-cover-with-search-bar: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Short Headline
-search-bar-placeholder: Label
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+error-message: Short Headline
+input-placeholder: Label
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.

@@ -10,11 +10,11 @@ site-title: hero
 -- site-doc.output:
 
 -- ds.hero-with-search-barV2: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Small Headline
-search-bar-placeholder: Label
-label: Small Incidental Text
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+error-message: Small Headline
+input-placeholder: Label
+input-label: Small Incidental Text
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
@@ -32,11 +32,11 @@ lang: ftd
 max-height.fixed.px: 350
 
 \-- ds.hero-with-search-barV2:  We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Small Headline
-search-bar-placeholder: Label
-label: Small Incidental Text
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+error-message: Small Headline
+input-placeholder: Label
+input-label: Small Incidental Text
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
@@ -59,37 +59,37 @@ type: Caption (`required`)
 This is a default property of the `hero` component. It’s used to add a
 body to `hero` component.
 
--- site-doc.component-property: `hero-image`
+-- site-doc.component-property: `image`
 type: ftd.image-src (`required`)
 
-This is a default property of the `hero` component. Using `hero-image`
-attribute image can be added.
+This is a default property of the `hero` component. Using `image`
+attribute image can be input-added.
 
--- site-doc.component-property: `cta-primary`
-type: String (`optional`)
+-- site-doc.component-property: `primary-cta`
+type: String (`optionalinput-`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
 
--- site-doc.component-property: `cta-primary-link`
+-- site-doc.component-property: `primary-cta-link`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
--- site-doc.component-property: `cta-primary-icon`
+-- site-doc.component-property: `primary-cta-icon`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 icon in the button.
 
--- site-doc.component-property: `tag`
+-- site-doc.component-property: `error-message`
 type: String (`required`)
 
 This is a default property of the `hero` component. It’s used to add a
-tagline above button.
+error-messageline above button.
 
--- site-doc.component-property: `search-bar-placeholder`
+-- site-doc.component-property: `input-placeholder`
 type: String (`optional`)
 
 This is a default property of the `hero` component. It’s used to add a

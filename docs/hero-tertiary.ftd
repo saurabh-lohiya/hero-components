@@ -10,14 +10,14 @@ site-title: hero
 -- site-doc.output:
 
 -- ds.hero-tertiary: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
-label: Small Incidental Text
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+primary-cta-link: /
+primary-cta-icon: $assets.files.assets.check-solid.svg
+secondary-cta: Button
+secondary-cta-link: /
+secondary-cta-icon: $assets.files.assets.check-solid.svg
+input-label: Small Incidental Text
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
@@ -37,14 +37,14 @@ lang: ftd
 max-height.fixed.px: 350
 
 \-- ds.hero-tertiary:  We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-primary-link: /
-cta-primary-icon: $assets.files.assets.check-solid.svg
-cta-secondary: Button
-cta-secondary-link: /
-cta-secondary-icon: $assets.files.assets.check-solid.svg
-label: Small Incidental Text
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+primary-cta-link: /
+primary-cta-icon: $assets.files.assets.check-solid.svg
+secondary-cta: Button
+secondary-cta-link: /
+secondary-cta-icon: $assets.files.assets.check-solid.svg
+input-label: Small Incidental Text
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
@@ -65,49 +65,49 @@ type: Caption (`required`)
 This is a default property of the `hero` component. It’s used to add a
 body to `hero` component.
 
--- site-doc.component-property: `hero-image`
+-- site-doc.component-property: `image`
 type: ftd.image-src (`required`)
 
-This is a default property of the `hero` component. Using `hero-image`
+This is a default property of the `hero` component. Using `image`
 attribute image can be added.
 
--- site-doc.component-property: `cta-primary`
+-- site-doc.component-property: `primary-cta`
 type: String (`optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
 
--- site-doc.component-property: `cta-primary-link`
+-- site-doc.component-property: `primary-cta-link`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
--- site-doc.component-property: `cta-primary-icon`
+-- site-doc.component-property: `primary-cta-icon`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 icon in the button.
 
--- site-doc.component-property: `cta-secondary`
+-- site-doc.component-property: `secondary-cta`
 type: String (`optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
 
--- site-doc.component-property: `cta-secondary-link`
+-- site-doc.component-property: `secondary-cta-link`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
--- site-doc.component-property: `cta-secondary-icon`
+-- site-doc.component-property: `secondary-cta-icon`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 icon in the button.
 
--- site-doc.component-property: `label`
+-- site-doc.component-property: `input-label`
 type: String (`optional`)
 
 This is a default property of the `hero` component. It’s used to add a

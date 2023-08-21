@@ -2,9 +2,9 @@
 full-width: true
 
 -- ds.hero-primary: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-cta-secondary: Button
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+secondary-cta: Button
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
