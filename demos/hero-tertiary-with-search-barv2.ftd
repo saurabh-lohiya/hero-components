@@ -1,7 +1,7 @@
 -- ds.page:
 full-width: true
 
--- ds.hero-tertiary-with-search-barV2: We Transform ideas into digital outcomes.
+-- ds.hero-right-hug-expanded-searchV2: We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
 error-message: Small Headline

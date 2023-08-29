@@ -14,7 +14,7 @@ github-url: https://github.com/saurabh-lohiya/hero
 -- site-doc.output:
 colors: $ftd.default-colors
 
--- ds.hero-primary: We Transform ideas into digital outcomes.
+-- ds.hero-right-hug: We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
 secondary-cta: Button
@@ -46,9 +46,9 @@ lang: ftd
 
 
 
--- component hero-primary:
-caption title:
-body body:
+-- component hero-right-hug:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html 
@@ -78,29 +78,31 @@ color: $inherited.colors.text
 spacing.fixed.px: 15
 align-self: center
 
--- ftd.text: $hero-primary.title
+-- ftd.text: $hero-right-hug.title
+if: { hero-right-hug.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 
 -- ftd.text:
+if: { hero-right-hug.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 
-$hero-primary.body
+$hero-right-hug.body
 
 -- ftd.row:
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- primary-button: $hero-primary.primary-cta
-if: { hero-primary.primary-cta != NULL }
-cta-link: $hero-primary.primary-cta-link
-src: $hero-primary.primary-cta-icon
+-- primary-button: $hero-right-hug.primary-cta
+if: { hero-right-hug.primary-cta != NULL }
+cta-link: $hero-right-hug.primary-cta-link
+src: $hero-right-hug.primary-cta-icon
 
--- secondary-button: $hero-primary.secondary-cta
-if: { hero-primary.secondary-cta != NULL }
-cta-link: $hero-primary.secondary-cta-link
-src: $hero-primary.secondary-cta-icon
+-- secondary-button: $hero-right-hug.secondary-cta
+if: { hero-right-hug.secondary-cta != NULL }
+cta-link: $hero-right-hug.secondary-cta-link
+src: $hero-right-hug.secondary-cta-icon
 
 -- end: ftd.row
 
@@ -116,7 +118,7 @@ margin-vertical.px if { ftd.device == "mobile" }: 30
 -- ftd.image:
 width: fill-container
 height: fill-container
-src: $hero-primary.image
+src: $hero-right-hug.image
 
 -- end: ftd.column
 
@@ -124,7 +126,7 @@ src: $hero-primary.image
 
 -- end: ftd.row
 
--- end: hero-primary
+-- end: hero-right-hug
 
 
 
@@ -136,8 +138,8 @@ src: $hero-primary.image
 
 
 -- component hero-secondary:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
@@ -155,7 +157,7 @@ padding-vertical.px: 49
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px:  $max-width
+max-width.fixed.px: $max-width
 height: fill-container
 wrap: true
 spacing: space-between
@@ -168,10 +170,12 @@ spacing.fixed.px: 15
 align-self: center
 
 -- ftd.text: $hero-secondary.title
+if: { hero-secondary.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 
 -- ftd.text:
+if: { hero-secondary.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 
@@ -323,17 +327,17 @@ src: $hero-tertiary.image
 
 
 
--- component hero-tertiaryV2:
-caption title:
-body body:
+-- component hero-left-hug-expanded:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
 optional string secondary-cta:
 string secondary-cta-link: index.html
-string input-label:
 ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+optional string input-label:
 
 -- ftd.row:
 width: fill-container
@@ -355,9 +359,9 @@ align-self: center
 margin-vertical.px if { ftd.device == "mobile" }: 30
 
 -- ftd.image:
+src: $hero-left-hug-expanded.image
 width: fill-container
 height: fill-container
-src: $hero-tertiaryV2.image
 
 -- end: ftd.column
 
@@ -371,35 +375,38 @@ align-self: center
 width.fixed.percent: 65
 color: $inherited.colors.text
 
--- ftd.text: $hero-tertiaryV2.title
+-- ftd.text: $hero-left-hug-expanded.title
+if: { hero-left-hug-expanded.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
+if: { hero-left-hug-expanded.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
 
-$hero-tertiaryV2.body
+$hero-left-hug-expanded.body
 
 -- ftd.row:
 spacing.fixed.px: 12
 margin-top.px: 25
 
--- primary-button: $hero-tertiaryV2.primary-cta
-if: { hero-tertiaryV2.primary-cta != NULL }
-cta-link: $hero-tertiaryV2.primary-cta-link
-src: $hero-tertiaryV2.primary-cta-icon
+-- primary-button: $hero-left-hug-expanded.primary-cta
+if: { hero-left-hug-expanded.primary-cta != NULL }
+cta-link: $hero-left-hug-expanded.primary-cta-link
+src: $hero-left-hug-expanded.primary-cta-icon
 
--- secondary-button: $hero-tertiaryV2.secondary-cta
-if: { hero-tertiaryV2.secondary-cta != NULL }
-cta-link: $hero-tertiaryV2.secondary-cta-link
-src: $hero-tertiaryV2.secondary-cta-icon
+-- secondary-button: $hero-left-hug-expanded.secondary-cta
+if: { hero-left-hug-expanded.secondary-cta != NULL }
+cta-link: $hero-left-hug-expanded.secondary-cta-link
+src: $hero-left-hug-expanded.secondary-cta-icon
 
 -- end: ftd.row
 
--- ftd.text: $hero-tertiaryV2.input-label
+-- ftd.text: $hero-left-hug-expanded.input-label
+if: { hero-left-hug-expanded.input-label != NULL }
 color: $inherited.colors.text
 role: $inherited.types.label-small
 margin-top.px: 10
@@ -412,7 +419,7 @@ margin-top.px: 10
 
 -- end: ftd.row
 
--- end: hero-tertiaryV2
+-- end: hero-left-hug-expanded
 
 
 
@@ -422,15 +429,16 @@ margin-top.px: 10
 
 
 
--- component hero-with-search-bar:
-caption title:
-body body:
+
+-- component hero-right-hug-search:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html 
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-string error-message:
-string input-placeholder: input-label
+optional string input-label: Label
+optional string input-placeholder:
 
 -- ftd.row:
 width: fill-container
@@ -452,19 +460,22 @@ width if { ftd.device == "mobile" }: fill-container
 color: $inherited.colors.text
 align-self: center
 
--- ftd.text: $hero-with-search-bar.title
+-- ftd.text: $hero-right-hug-search.title
+if: { hero-right-hug-search.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
+if: { hero-right-hug-search.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
 
-$hero-with-search-bar.body
+$hero-right-hug-search.body
 
--- ftd.text: $hero-with-search-bar.error-message
+-- ftd.text: $hero-right-hug-search.input-label
+if: { hero-right-hug-search.input-label != NULL }
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -474,12 +485,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
--- search-bar: $hero-with-search-bar.input-placeholder
+-- search-bar: $hero-right-hug-search.input-placeholder
 
--- primary-button: $hero-with-search-bar.primary-cta
-if: { hero-with-search-bar.primary-cta != NULL }
-cta-link: $hero-with-search-bar.primary-cta-link
-src: $hero-with-search-bar.primary-cta-icon
+-- primary-button: $hero-right-hug-search.primary-cta
+if: { hero-right-hug-search.primary-cta != NULL }
+cta-link: $hero-right-hug-search.primary-cta-link
+src: $hero-right-hug-search.primary-cta-icon
 
 -- end: ftd.row
 
@@ -495,7 +506,7 @@ margin-vertical.px if { ftd.device == "mobile" }: 30
 -- ftd.image:
 width: fill-container
 height: fill-container
-src: $hero-with-search-bar.image
+src: $hero-right-hug-search.image
 
 -- end: ftd.column
 
@@ -503,7 +514,7 @@ src: $hero-with-search-bar.image
 
 -- end: ftd.row
 
--- end: hero-with-search-bar
+-- end: hero-right-hug-search
 
 
 
@@ -514,7 +525,7 @@ src: $hero-with-search-bar.image
 
 
 
--- component hero-with-search-barV2:
+-- component hero-right-hug-searchv2:
 caption title:
 body body:
 ftd.image-src image:
@@ -545,7 +556,7 @@ width if { ftd.device == "mobile" }: fill-container
 color: $inherited.colors.text
 align-self: center
 
--- ftd.text: $hero-with-search-barV2.title
+-- ftd.text: $hero-right-hug-searchv2.title
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
@@ -555,9 +566,9 @@ role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
 
-$hero-with-search-barV2.body
+$hero-right-hug-searchv2.body
 
--- ftd.text: $hero-with-search-barV2.error-message
+-- ftd.text: $hero-right-hug-searchv2.error-message
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -567,16 +578,16 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
--- search-bar: $hero-with-search-barV2.input-placeholder
+-- search-bar: $hero-right-hug-searchv2.input-placeholder
 
--- primary-button: $hero-with-search-barV2.primary-cta
-if: { hero-with-search-barV2.primary-cta != NULL }
-cta-link: $hero-with-search-barV2.primary-cta-link
-src: $hero-with-search-barV2.primary-cta-icon
+-- primary-button: $hero-right-hug-searchv2.primary-cta
+if: { hero-right-hug-searchv2.primary-cta != NULL }
+cta-link: $hero-right-hug-searchv2.primary-cta-link
+src: $hero-right-hug-searchv2.primary-cta-icon
 
 -- end: ftd.row
 
--- ftd.text: $hero-with-search-barV2.input-label
+-- ftd.text: $hero-right-hug-searchv2.input-label
 color: $inherited.colors.text
 role: $inherited.types.label-small
 margin-top.px: 10
@@ -593,7 +604,7 @@ margin-vertical.px if { ftd.device == "mobile" }: 30
 -- ftd.image:
 width: fill-container
 height: fill-container
-src: $hero-with-search-barV2.image
+src: $hero-right-hug-searchv2.image
 
 -- end: ftd.column
 
@@ -601,7 +612,7 @@ src: $hero-with-search-barV2.image
 
 -- end: ftd.row
 
--- end: hero-with-search-barV2
+-- end: hero-right-hug-searchv2
 
 
 
@@ -612,7 +623,7 @@ src: $hero-with-search-barV2.image
 
 
 
--- component hero-cover:
+-- component hero-bottom-hug:
 caption title:
 body body:
 ftd.image-src image:
@@ -634,7 +645,7 @@ max-width.fixed.px: $max-width
 color: $inherited.colors.text
 align-content: center
 
--- ftd.text: $hero-cover.title
+-- ftd.text: $hero-bottom-hug.title
 role: $inherited.types.heading-hero
 max-width.fixed.percent: 60
 text-align: center
@@ -646,35 +657,35 @@ max-width.fixed.percent: 60
 text-align: center
 margin-top.px: 15
 
-$hero-cover.body
+$hero-bottom-hug.body
 
 -- ftd.row:
 spacing.fixed.px: 12
 margin-top.px: 25
 
--- primary-button: $hero-cover.primary-cta
-if: { hero-cover.primary-cta != NULL }
-cta-link: $hero-cover.primary-cta-link
-src: $hero-cover.primary-cta-icon
+-- primary-button: $hero-bottom-hug.primary-cta
+if: { hero-bottom-hug.primary-cta != NULL }
+cta-link: $hero-bottom-hug.primary-cta-link
+src: $hero-bottom-hug.primary-cta-icon
 
--- primary-button: $hero-cover.secondary-cta
-if: { hero-cover.secondary-cta != NULL }
-cta-link: $hero-cover.secondary-cta-link
-src: $hero-cover.secondary-cta-icon
+-- primary-button: $hero-bottom-hug.secondary-cta
+if: { hero-bottom-hug.secondary-cta != NULL }
+cta-link: $hero-bottom-hug.secondary-cta-link
+src: $hero-bottom-hug.secondary-cta-icon
 
 -- end: ftd.row
 
 -- ftd.image:
 width: fill-container
 height.fixed.px: 680
-src: $hero-cover.image
+src: $hero-bottom-hug.image
 margin-top.px: 30
 
 -- end: ftd.column
 
 -- end: ftd.column
 
--- end: hero-cover
+-- end: hero-bottom-hug
 
 
 
@@ -685,7 +696,7 @@ margin-top.px: 30
 
 
 
--- component hero-cover-with-search-bar:
+-- component hero-bottom-hug-search:
 caption title:
 body body:
 ftd.image-src image:
@@ -706,7 +717,7 @@ max-width.fixed.px: $max-width
 color: $inherited.colors.text
 align-content: center
 
--- ftd.text: $hero-cover-with-search-bar.title
+-- ftd.text: $hero-bottom-hug-search.title
 role: $inherited.types.heading-hero
 max-width.fixed.percent: 60
 text-align: center
@@ -718,9 +729,9 @@ max-width.fixed.percent: 60
 text-align: center
 margin-top.px: 15
 
-$hero-cover-with-search-bar.body
+$hero-bottom-hug-search.body
 
--- ftd.text: $hero-cover-with-search-bar.error-message
+-- ftd.text: $hero-bottom-hug-search.error-message
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -729,26 +740,26 @@ margin-top.px: 15
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- search-bar: $hero-cover-with-search-bar.input-placeholder
+-- search-bar: $hero-bottom-hug-search.input-placeholder
 
--- primary-button: $hero-cover-with-search-bar.primary-cta
-if: { hero-cover-with-search-bar.primary-cta != NULL }
-cta-link: $hero-cover-with-search-bar.primary-cta-link
-src: $hero-cover-with-search-bar.primary-cta-icon
+-- primary-button: $hero-bottom-hug-search.primary-cta
+if: { hero-bottom-hug-search.primary-cta != NULL }
+cta-link: $hero-bottom-hug-search.primary-cta-link
+src: $hero-bottom-hug-search.primary-cta-icon
 
 -- end: ftd.row
 
 -- ftd.image:
 width: fill-container
 height.fixed.px: 680
-src: $hero-cover-with-search-bar.image
+src: $hero-bottom-hug-search.image
 margin-top.px: 30
 
 -- end: ftd.column
 
 -- end: ftd.column
 
--- end: hero-cover-with-search-bar
+-- end: hero-bottom-hug-search
 
 
 
@@ -759,7 +770,7 @@ margin-top.px: 30
 
 
 
--- component hero-tertiary-with-search-bar:
+-- component hero-right-hug-expanded-search:
 caption title:
 body body:
 ftd.image-src image:
@@ -791,7 +802,7 @@ align-self: center
 width.fixed.percent: 65
 color: $inherited.colors.text
 
--- ftd.text: $hero-tertiary-with-search-bar.title
+-- ftd.text: $hero-right-hug-expanded-search.title
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
@@ -801,9 +812,9 @@ role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
 
-$hero-tertiary-with-search-bar.body
+$hero-right-hug-expanded-search.body
 
--- ftd.text: $hero-tertiary-with-search-bar.error-message
+-- ftd.text: $hero-right-hug-expanded-search.error-message
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -812,12 +823,12 @@ margin-top.px: 15
 spacing.fixed.px: 12
 margin-top.px: 10
 
--- search-bar: $hero-tertiary-with-search-bar.input-placeholder
+-- search-bar: $hero-right-hug-expanded-search.input-placeholder
 
--- primary-button: $hero-tertiary-with-search-bar.primary-cta
-if: { hero-tertiary-with-search-bar.primary-cta != NULL }
-cta-link: $hero-tertiary-with-search-bar.primary-cta-link
-src: $hero-tertiary-with-search-bar.primary-cta-icon
+-- primary-button: $hero-right-hug-expanded-search.primary-cta
+if: { hero-right-hug-expanded-search.primary-cta != NULL }
+cta-link: $hero-right-hug-expanded-search.primary-cta-link
+src: $hero-right-hug-expanded-search.primary-cta-icon
 
 -- end: ftd.row
 
@@ -835,7 +846,7 @@ margin-vertical.px if { ftd.device == "mobile" }: 30
 -- ftd.image:
 width: fill-container
 height: fill-container
-src: $hero-tertiary-with-search-bar.image
+src: $hero-right-hug-expanded-search.image
 
 -- end: ftd.column
 
@@ -843,7 +854,7 @@ src: $hero-tertiary-with-search-bar.image
 
 -- end: ftd.row
 
--- end: hero-tertiary-with-search-bar
+-- end: hero-right-hug-expanded-search
 
 
 
@@ -854,7 +865,7 @@ src: $hero-tertiary-with-search-bar.image
 
 
 
--- component hero-tertiary-with-search-barV2:
+-- component hero-left-hug-expanded-search:
 caption title:
 body body:
 ftd.image-src image:
@@ -886,7 +897,7 @@ margin-vertical.px if { ftd.device == "mobile" }: 30
 -- ftd.image:
 width: fill-container
 height: fill-container
-src: $hero-tertiary-with-search-barV2.image
+src: $hero-left-hug-expanded-search.image
 
 -- end: ftd.column
 
@@ -900,7 +911,7 @@ align-self: center
 width.fixed.percent: 65
 color: $inherited.colors.text
 
--- ftd.text: $hero-tertiary-with-search-barV2.title
+-- ftd.text: $hero-left-hug-expanded-search.title
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
@@ -910,9 +921,9 @@ role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
 
-$hero-tertiary-with-search-barV2.body
+$hero-left-hug-expanded-search.body
 
--- ftd.text: $hero-tertiary-with-search-barV2.error-message
+-- ftd.text: $hero-left-hug-expanded-search.error-message
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -922,12 +933,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
--- search-bar: $hero-tertiary-with-search-barV2.input-placeholder
+-- search-bar: $hero-left-hug-expanded-search.input-placeholder
 
--- primary-button: $hero-tertiary-with-search-barV2.primary-cta
-if: { hero-tertiary-with-search-barV2.primary-cta != NULL }
-cta-link: $hero-tertiary-with-search-barV2.primary-cta-link
-src: $hero-tertiary-with-search-barV2.primary-cta-icon
+-- primary-button: $hero-left-hug-expanded-search.primary-cta
+if: { hero-left-hug-expanded-search.primary-cta != NULL }
+cta-link: $hero-left-hug-expanded-search.primary-cta-link
+src: $hero-left-hug-expanded-search.primary-cta-icon
 
 -- end: ftd.row
 
@@ -939,7 +950,7 @@ src: $hero-tertiary-with-search-barV2.primary-cta-icon
 
 -- end: ftd.row
 
--- end: hero-tertiary-with-search-barV2
+-- end: hero-left-hug-expanded-search
 
 
 
@@ -1064,3 +1075,106 @@ top.px: 12
 -- end: ftd.row
 
 -- end: search-bar
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-expanded:
+caption title:
+body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string secondary-cta:
+string secondary-cta-link: index.html
+string input-label:
+ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-content: center
+align-self: center
+
+-- ftd.column:
+width.fixed.percent: 65
+color: $inherited.colors.text
+
+-- ftd.text: $hero-right-hug-expanded.title
+if: { hero-right-hug-expanded.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-right-hug-expanded.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-right-hug-expanded.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 25
+
+-- primary-button: $hero-right-hug-expanded.primary-cta
+if: { hero-right-hug-expanded.primary-cta != NULL }
+cta-link: $hero-right-hug-expanded.primary-cta-link
+src: $hero-right-hug-expanded.primary-cta-icon
+
+-- secondary-button: $hero-right-hug-expanded.secondary-cta
+if: { hero-right-hug-expanded.secondary-cta != NULL }
+cta-link: $hero-right-hug-expanded.secondary-cta-link
+src: $hero-right-hug-expanded.secondary-cta-icon
+
+-- end: ftd.row
+
+-- ftd.text: $hero-right-hug-expanded.input-label
+color: $inherited.colors.text
+role: $inherited.types.label-small
+margin-top.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 540
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug-expanded.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-expanded

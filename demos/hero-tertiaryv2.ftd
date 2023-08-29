@@ -1,7 +1,7 @@
 -- ds.page:
 full-width: true
 
--- ds.hero-tertiaryV2: We Transform ideas into digital outcomes.
+-- ds.hero-left-hug-expanded: We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
 secondary-cta: Button

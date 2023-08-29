@@ -1,6 +1,6 @@
 -- $site-doc.copyright-info: Copyright © 2023
 
--- site-doc.doc-home: hero-tertiary-with-search-barV2
+-- site-doc.doc-home: hero-bottom-hug-search
 github-url: https://github.com/saurabh-lohiya/hero
 current-package: saurabh-lohiya.github.io/hero
 site-title: hero
@@ -9,28 +9,7 @@ site-title: hero
 
 -- site-doc.output:
 
--- ds.hero-tertiary-with-search-barV2: We Transform ideas into digital outcomes.
-image: $assets.files.assets.hero-img.jpg
-primary-cta: Button
-error-message: Small Headline
-input-placeholder: Label
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
--- site-doc.header: Overview:
-
-`-- ds.hero-tertiary-with-search-barV2` contains, a image to the right side and information to the
-left side of it. If you want to use it on you gangaimaging.com pages then use
-below given example code and add it inside a `.ftd` file.
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-max-height.fixed.px: 350
-
-\-- ds.hero-tertiary-with-search-barV2:  We Transform ideas into digital outcomes.
+-- ds.hero-bottom-hug-search: We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
 error-message: Small Headline
@@ -41,9 +20,30 @@ consultancy services and help you create outstanding digital products.
 
 -- end: site-doc.output
 
+-- site-doc.header: Overview:
+
+`-- ds.hero-bottom-hug-search` contains, a image to the right side and information to the
+left side of it. If you want to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.hero-bottom-hug-search:  We Transform ideas into digital outcomes.
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+error-message: Small Headline
+input-placeholder: Label
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- ds.hero-tertiary-with-search-barV2` component.
+Below are details of all properties of `-- ds.hero-bottom-hug-search` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)

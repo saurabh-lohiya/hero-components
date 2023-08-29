@@ -1,6 +1,6 @@
 -- $site-doc.copyright-info: Copyright © 2023
 
--- site-doc.doc-home: hero-with-search-bar
+-- site-doc.doc-home: hero-right-hug-expanded-search
 github-url: https://github.com/saurabh-lohiya/hero
 current-package: saurabh-lohiya.github.io/hero
 site-title: hero
@@ -9,7 +9,7 @@ site-title: hero
 
 -- site-doc.output:
 
--- ds.hero-with-search-bar: We Transform ideas into digital outcomes.
+-- ds.hero-right-hug-expanded-search: We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
 error-message: Small Headline
@@ -22,16 +22,17 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Overview:
 
-`-- ds.hero-with-search-bar` contains, a image to the right side and information to the
+`-- ds.hero-right-hug-expanded-search` contains, a image to the right side and information to the
 left side of it. If you want to use it on you gangaimaging.com pages then use
 below given example code and add it inside a `.ftd` file.
+
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
 max-height.fixed.px: 350
 
-\-- ds.hero-with-search-bar:  We Transform ideas into digital outcomes.
+\-- ds.hero-right-hug-expanded-search:  We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
 error-message: Small Headline
@@ -42,7 +43,7 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- ds.hero-with-search-bar` component.
+Below are details of all properties of `-- ds.hero-right-hug-expanded-search` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)
@@ -59,17 +60,20 @@ body to `hero` component.
 -- site-doc.component-property: `image`
 type: ftd.image-src (`required`)
 
-This is a default property of the `hero` component. Using `image`image can be added.
+This is a default property of the `hero` component. Using `image`
+attribute image can be added.
 
 -- site-doc.component-property: `primary-cta`
 type: String (`optional`)
 
-This is a default property of the `hero` component. It’s used to add ato action button title.
+This is a default property of the `hero` component. It’s used to add a
+click to action button title.
 
 -- site-doc.component-property: `primary-cta-link`
 type: String (`Default`)
 
-This is a default property of the `hero` component. It’s used to add ato click to action button.
+This is a default property of the `hero` component. It’s used to add a
+link to click to action button.
 
 -- site-doc.component-property: `primary-cta-icon`
 type: String (`Default`)
