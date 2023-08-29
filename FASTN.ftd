@@ -21,11 +21,11 @@ favicon: /-/saurabh-lohiya.github.io/hero/favicon.ico
 # Home: index.html
 - Overview: index.html
 - Hero Right Hug: /docs/hero-right-hug/
-- Hero Secondary: /docs/hero-secondary/
+- Hero Right Hug Large: /docs/hero-right-hug-large/
 - Hero Right Hug Search: /docs/hero-right-hug-search/
 - Hero Left Hug Expanded: /docs/hero-left-hug-expanded/
 - Hero Right Hug Expanded: /docs/hero-right-hug-expanded/
-- Hero With Search Bar V2: /docs/hero-right-hug-searchv2/
+- Hero With Search Bar With Label: /docs/hero-right-hug-search-label/
 - Hero Bottom Hug: /docs/hero-bottom-hug/
 - Hero Bottom Hug Search: /docs/hero-bottom-hug-search/
 - Hero Right Hug Expanded Search: /docs/hero-right-hug-expanded-search/

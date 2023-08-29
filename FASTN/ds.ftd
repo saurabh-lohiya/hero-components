@@ -6,7 +6,7 @@
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
 
 -- import: saurabh-lohiya.github.io/hero/
-export: hero-right-hug, hero-secondary, hero-tertiary, hero-right-hug-search, hero-bottom-hug, hero-right-hug-expanded-search, hero-left-hug-expanded-search, hero-left-hug-expanded, hero-bottom-hug-search, hero-right-hug-expanded, hero-right-hug-searchv2
+export: hero-right-hug, hero-right-hug-large, hero-tertiary, hero-right-hug-search, hero-bottom-hug, hero-right-hug-expanded-search, hero-left-hug-expanded-search, hero-left-hug-expanded, hero-bottom-hug-search, hero-right-hug-expanded, hero-right-hug-search-label
 
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
 

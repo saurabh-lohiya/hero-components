@@ -1,6 +1,6 @@
 -- $site-doc.copyright-info: Copyright © 2023
 
--- site-doc.doc-home: hero-right-hug-searchv2
+-- site-doc.doc-home: hero-right-hug-large
 github-url: https://github.com/saurabh-lohiya/hero
 current-package: saurabh-lohiya.github.io/hero
 site-title: hero
@@ -9,19 +9,17 @@ site-title: hero
 
 -- site-doc.output:
 
--- ds.hero-right-hug-searchv2: We Transform ideas into digital outcomes.
+-- ds.hero-right-hug-large: We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
-error-message: Small Headline
-input-placeholder: Label
-input-label: Small Incidental Text
+secondary-cta: Button
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Overview:
 
-`-- ds.hero-right-hug-searchv2` contains, a image to the right side and information to the
+`-- ds.hero-right-hug-large` contains, a image to the right side and information to the
 left side of it. If you want to use it on you gangaimaging.com pages then use
 below given example code and add it inside a `.ftd` file.
 
@@ -31,12 +29,14 @@ below given example code and add it inside a `.ftd` file.
 lang: ftd
 max-height.fixed.px: 350
 
-\-- ds.hero-right-hug-searchv2:  We Transform ideas into digital outcomes.
+\-- ds.hero-right-hug-large:  We Transform ideas into digital outcomes.
 image: $assets.files.assets.hero-img.jpg
 primary-cta: Button
-error-message: Small Headline
-input-placeholder: Label
-input-label: Small Incidental Text
+primary-cta-link: /
+primary-cta-icon: $assets.files.assets.check-solid.svg
+secondary-cta: Button
+secondary-cta-link: /
+secondary-cta-icon: $assets.files.assets.check-solid.svg
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
@@ -45,16 +45,16 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- ds.hero-right-hug-searchv2` component.
+Below are details of all properties of `-- ds.hero-right-hug-large` component.
 
 -- site-doc.component-property: `title`
-type: Caption (`required`)
+type: Caption (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 title to `hero` component.
 
 -- site-doc.component-property: `body`
-type: Caption (`required`)
+type: Caption (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 body to `hero` component.
@@ -63,7 +63,7 @@ body to `hero` component.
 type: ftd.image-src (`required`)
 
 This is a default property of the `hero` component. Using `image`
-attribute image can be input-added.
+attribute image can be added.
 
 -- site-doc.component-property: `primary-cta`
 type: String (`optional`)
@@ -83,22 +83,22 @@ type: String (`Default`)
 This is a default property of the `hero` component. It’s used to add a
 icon in the Primary button.
 
--- site-doc.component-property: `error-message`
+-- site-doc.component-property: `secondary-cta`
 type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
-error-messageline above button.
+Label to Secondary Button.
 
--- site-doc.component-property: `input-placeholder`
+-- site-doc.component-property: `secondary-cta-link`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
-placeholder to the search-bar.
+link to the Secondary button.
 
--- site-doc.component-property: `input-label`
-type: String (`optional`)
+-- site-doc.component-property: `secondary-cta-icon`
+type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
-label below above button.
+icon in the Secondary button.
 
 -- end: site-doc.doc-home
