@@ -60,13 +60,13 @@ This is a default property of the `hero` component. It’s used to add a
 body to `hero` component.
 
 -- site-doc.component-property: `image`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`Required`)
 
 This is a default property of the `hero` component. Using `image`
 attribute image can be added.
 
 -- site-doc.component-property: `primary-cta`
-type: String (`optional`)
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.

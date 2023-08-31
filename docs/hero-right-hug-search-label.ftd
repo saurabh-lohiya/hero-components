@@ -48,25 +48,25 @@ consultancy services and help you create outstanding digital products.
 Below are details of all properties of `-- ds.hero-right-hug-search-label` component.
 
 -- site-doc.component-property: `title`
-type: Caption (`required`)
+type: Caption (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 title to `hero` component.
 
 -- site-doc.component-property: `body`
-type: Caption (`required`)
+type: Caption (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 body to `hero` component.
 
 -- site-doc.component-property: `image`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`Required`)
 
 This is a default property of the `hero` component. Using `image`
 attribute image can be input-added.
 
 -- site-doc.component-property: `primary-cta`
-type: String (`optional`)
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
@@ -96,7 +96,7 @@ This is a default property of the `hero` component. It’s used to add a
 placeholder to the search-bar.
 
 -- site-doc.component-property: `input-label`
-type: String (`optional`)
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 label below above button.

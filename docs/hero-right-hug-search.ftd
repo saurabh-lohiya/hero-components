@@ -62,7 +62,7 @@ type: ftd.image-src (`Required`)
 This is a default property of the `hero` component. Using `image`image can be added.
 
 -- site-doc.component-property: `primary-cta`
-type: String (`optional`)
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
@@ -80,7 +80,7 @@ This is a default property of the `hero` component. It’s used to add a
 icon in the Primary button.
 
 -- site-doc.component-property: `input-label`
-type: String (`optional`)
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 input-label line above button.
