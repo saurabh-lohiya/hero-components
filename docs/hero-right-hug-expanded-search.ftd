@@ -1,6 +1,6 @@
 -- $site-doc.copyright-info: Copyright © 2023
 
--- site-doc.doc-home: hero-with-search-bar
+-- site-doc.doc-home: hero-right-hug-expanded-search
 github-url: https://github.com/saurabh-lohiya/hero
 current-package: saurabh-lohiya.github.io/hero
 site-title: hero
@@ -9,11 +9,11 @@ site-title: hero
 
 -- site-doc.output:
 
--- ds.hero-with-search-bar: We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Small Headline
-search-bar-placeholder: Label
+-- ds.hero-right-hug-expanded-search: We Transform ideas into digital outcomes.
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+error-message: Small Headline
+input-placeholder: Label
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
@@ -22,72 +22,73 @@ consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Overview:
 
-`-- ds.hero-with-search-bar` contains, a image to the right side and information to the
+`-- ds.hero-right-hug-expanded-search` contains, a image to the right side and information to the
 left side of it. If you want to use it on you gangaimaging.com pages then use
 below given example code and add it inside a `.ftd` file.
+
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
 max-height.fixed.px: 350
 
-\-- ds.hero-with-search-bar:  We Transform ideas into digital outcomes.
-hero-image: $assets.files.assets.hero-img.jpg
-cta-primary: Button
-tag: Small Headline
-search-bar-placeholder: Label
+\-- ds.hero-right-hug-expanded-search:  We Transform ideas into digital outcomes.
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+error-message: Small Headline
+input-placeholder: Label
 
 We are an award-winning strategic design company that provides 
 consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- ds.hero-with-search-bar` component.
+Below are details of all properties of `-- ds.hero-right-hug-expanded-search` component.
 
 -- site-doc.component-property: `title`
-type: Caption (`required`)
+type: Caption (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 title to `hero` component.
 
 -- site-doc.component-property: `body`
-type: Caption (`required`)
+type: Caption (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 body to `hero` component.
 
--- site-doc.component-property: `hero-image`
-type: ftd.image-src (`required`)
+-- site-doc.component-property: `image`
+type: ftd.image-src (`Required`)
 
-This is a default property of the `hero` component. Using `hero-image`
+This is a default property of the `hero` component. Using `image`
 attribute image can be added.
 
--- site-doc.component-property: `cta-primary`
-type: String (`optional`)
+-- site-doc.component-property: `primary-cta`
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 click to action button title.
 
--- site-doc.component-property: `cta-primary-link`
+-- site-doc.component-property: `primary-cta-link`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
--- site-doc.component-property: `cta-primary-icon`
+-- site-doc.component-property: `primary-cta-icon`
 type: String (`Default`)
 
 This is a default property of the `hero` component. It’s used to add a
 icon in the button.
 
--- site-doc.component-property: `tag`
-type: String (`required`)
+-- site-doc.component-property: `error-message`
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
-tagline above button.
+error-messageline above button.
 
--- site-doc.component-property: `search-bar-placeholder`
-type: String (`optional`)
+-- site-doc.component-property: `input-placeholder`
+type: String (`Optional`)
 
 This is a default property of the `hero` component. It’s used to add a
 placeholder to the search-bar.
