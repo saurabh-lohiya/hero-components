@@ -1,7 +1,7 @@
 -- import: fastn
 
--- fastn.package: saurabh-lohiya.github.io/hero
-favicon: /-/saurabh-lohiya.github.io/hero/favicon.ico
+-- fastn.package: saurabh-lohiya.github.io/hero-components
+favicon: /-/saurabh-lohiya.github.io/hero-components/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/site-doc
@@ -9,9 +9,9 @@ favicon: /-/saurabh-lohiya.github.io/hero/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- fastn.auto-import: saurabh-lohiya.github.io/hero/FASTN/ds
--- fastn.auto-import: saurabh-lohiya.github.io/hero/assets
--- fastn.auto-import: saurabh-lohiya.github.io/hero/common
+-- fastn.auto-import: saurabh-lohiya.github.io/hero-components/FASTN/ds
+-- fastn.auto-import: saurabh-lohiya.github.io/hero-components/assets
+-- fastn.auto-import: saurabh-lohiya.github.io/hero-components/common
 -- fastn.auto-import: fastn-community.github.io/site-doc
 -- fastn.auto-import: doc-site
 -- fastn.auto-import: cb

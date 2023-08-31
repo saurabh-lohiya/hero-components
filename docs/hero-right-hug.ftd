@@ -1,8 +1,8 @@
 -- $site-doc.copyright-info: Copyright © 2023
 
 -- site-doc.doc-home: hero-right-hug
-github-url: https://github.com/saurabh-lohiya/hero
-current-package: saurabh-lohiya.github.io/hero
+github-url: https://github.com/saurabh-lohiya/hero-components
+current-package: saurabh-lohiya.github.io/hero-components
 site-title: hero
 
 -- site-doc.header: Demo:
