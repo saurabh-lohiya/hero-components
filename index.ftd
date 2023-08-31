@@ -227,105 +227,6 @@ src: $hero-right-hug-large.image
 
 
 
--- component hero-tertiary:
-caption title:
-body body:
-ftd.image-src image:
-optional string primary-cta:
-string primary-cta-link: index.html
-ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-optional string secondary-cta:
-string secondary-cta-link: index.html
-string input-label:
-ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
-
--- ftd.row:
-width: fill-container
-align-content: center
-height: fill-container
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-padding-vertical.px: 49
-
--- ftd.row:
-width: fill-container
-height: fill-container
-wrap: true
-
--- ftd.column:
-width.fixed.percent: 50
-width if { ftd.device == "mobile" }: fill-container
-align-content: center
-align-self: center
-
--- ftd.column:
-width.fixed.percent: 65
-color: $inherited.colors.text
-
--- ftd.text: $hero-tertiary.title
-role: $inherited.types.heading-hero
-style: bold
-margin-top.px: 15
-
--- ftd.text:
-role: $inherited.types.copy-regular
-max-width.fixed.percent: 90
-margin-top.px: 15
-
-$hero-tertiary.body
-
--- ftd.row:
-spacing.fixed.px: 12
-margin-top.px: 25
-
--- primary-button: $hero-tertiary.primary-cta
-if: { hero-tertiary.primary-cta != NULL }
-cta-link: $hero-tertiary.primary-cta-link
-src: $hero-tertiary.primary-cta-icon
-
--- primary-button: $hero-tertiary.secondary-cta
-if: { hero-tertiary.secondary-cta != NULL }
-cta-link: $hero-tertiary.secondary-cta-link
-src: $hero-tertiary.secondary-cta-icon
-
--- end: ftd.row
-
--- ftd.text: $hero-tertiary.input-label
-color: $inherited.colors.text
-role: $inherited.types.label-small
-margin-top.px: 10
-
--- end: ftd.column
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.percent: 50
-height.fixed.px: 540
-width if { ftd.device == "mobile" }: fill-container
-align-self: center
-margin-vertical.px if { ftd.device == "mobile" }: 30
-
--- ftd.image:
-width: fill-container
-height: fill-container
-src: $hero-tertiary.image
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: hero-tertiary
-
-
-
-
-
-
-
-
-
 
 -- component hero-left-hug-expanded:
 optional caption title:
@@ -485,7 +386,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
+-- ftd.column:
+if: { hero-right-hug-search.input-placeholder != NULL }
+
 -- search-bar: $hero-right-hug-search.input-placeholder
+
+-- end: ftd.column
 
 -- primary-button: $hero-right-hug-search.primary-cta
 if: { hero-right-hug-search.primary-cta != NULL }
@@ -526,15 +432,15 @@ src: $hero-right-hug-search.image
 
 
 -- component hero-right-hug-search-label:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-string error-message:
-string input-label:
-string input-placeholder:
+optional string error-message:
+optional string input-label:
+optional string input-placeholder:
 
 -- ftd.row:
 width: fill-container
@@ -557,11 +463,13 @@ color: $inherited.colors.text
 align-self: center
 
 -- ftd.text: $hero-right-hug-search-label.title
+if: { hero-right-hug-search-label.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
+if: { hero-right-hug-search-label.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -569,6 +477,7 @@ margin-top.px: 15
 $hero-right-hug-search-label.body
 
 -- ftd.text: $hero-right-hug-search-label.error-message
+if: { hero-right-hug-search-label.error-message != NULL }
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -578,7 +487,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
+-- ftd.column:
+if: { hero-right-hug-search-label.input-placeholder != NULL }
+
 -- search-bar: $hero-right-hug-search-label.input-placeholder
+
+-- end: ftd.column
 
 -- primary-button: $hero-right-hug-search-label.primary-cta
 if: { hero-right-hug-search-label.primary-cta != NULL }
@@ -588,6 +502,7 @@ src: $hero-right-hug-search-label.primary-cta-icon
 -- end: ftd.row
 
 -- ftd.text: $hero-right-hug-search-label.input-label
+if: { hero-right-hug-search-label.input-label != NULL }
 color: $inherited.colors.text
 role: $inherited.types.label-small
 margin-top.px: 10
@@ -624,8 +539,8 @@ src: $hero-right-hug-search-label.image
 
 
 -- component hero-bottom-hug:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
@@ -646,12 +561,14 @@ color: $inherited.colors.text
 align-content: center
 
 -- ftd.text: $hero-bottom-hug.title
+if: { hero-bottom-hug.title != NULL }
 role: $inherited.types.heading-hero
 max-width.fixed.percent: 60
 text-align: center
 style: bold
 
 -- ftd.text:
+if: { hero-bottom-hug.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 60
 text-align: center
@@ -668,7 +585,7 @@ if: { hero-bottom-hug.primary-cta != NULL }
 cta-link: $hero-bottom-hug.primary-cta-link
 src: $hero-bottom-hug.primary-cta-icon
 
--- primary-button: $hero-bottom-hug.secondary-cta
+-- secondary-button: $hero-bottom-hug.secondary-cta
 if: { hero-bottom-hug.secondary-cta != NULL }
 cta-link: $hero-bottom-hug.secondary-cta-link
 src: $hero-bottom-hug.secondary-cta-icon
@@ -697,14 +614,14 @@ margin-top.px: 30
 
 
 -- component hero-bottom-hug-search:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-string error-message:
-string input-placeholder:
+optional string error-message:
+optional string input-placeholder:
 
 -- ftd.column:
 width: fill-container
@@ -718,12 +635,14 @@ color: $inherited.colors.text
 align-content: center
 
 -- ftd.text: $hero-bottom-hug-search.title
+if: { hero-bottom-hug-search.title != NULL }
 role: $inherited.types.heading-hero
 max-width.fixed.percent: 60
 text-align: center
 style: bold
 
 -- ftd.text:
+if: { hero-bottom-hug-search.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 60
 text-align: center
@@ -732,6 +651,7 @@ margin-top.px: 15
 $hero-bottom-hug-search.body
 
 -- ftd.text: $hero-bottom-hug-search.error-message
+if: { hero-bottom-hug-search.error-message != NULL }
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -740,7 +660,12 @@ margin-top.px: 15
 spacing.fixed.px: 12
 margin-top.px: 10
 
+-- ftd.column:
+if: { hero-bottom-hug-search.input-placeholder != NULL }
+
 -- search-bar: $hero-bottom-hug-search.input-placeholder
+
+-- end: ftd.column
 
 -- primary-button: $hero-bottom-hug-search.primary-cta
 if: { hero-bottom-hug-search.primary-cta != NULL }
@@ -771,14 +696,14 @@ margin-top.px: 30
 
 
 -- component hero-right-hug-expanded-search:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-string error-message:
-string input-placeholder:
+optional string error-message:
+optional string input-placeholder:
 
 -- ftd.row:
 width: fill-container
@@ -803,11 +728,13 @@ width.fixed.percent: 65
 color: $inherited.colors.text
 
 -- ftd.text: $hero-right-hug-expanded-search.title
+if: { hero-right-hug-expanded-search.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
+if: { hero-right-hug-expanded-search.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -815,6 +742,7 @@ margin-top.px: 15
 $hero-right-hug-expanded-search.body
 
 -- ftd.text: $hero-right-hug-expanded-search.error-message
+if: { hero-right-hug-expanded-search.error-message != NULL }
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -823,7 +751,12 @@ margin-top.px: 15
 spacing.fixed.px: 12
 margin-top.px: 10
 
+-- ftd.column:
+if: { hero-right-hug-expanded-search.input-placeholder != NULL }
+
 -- search-bar: $hero-right-hug-expanded-search.input-placeholder
+
+-- end: ftd.column
 
 -- primary-button: $hero-right-hug-expanded-search.primary-cta
 if: { hero-right-hug-expanded-search.primary-cta != NULL }
@@ -866,14 +799,14 @@ src: $hero-right-hug-expanded-search.image
 
 
 -- component hero-left-hug-expanded-search:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html 
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-string error-message: Small Headline
-string input-placeholder: input-label
+optional string error-message: Small Headline
+optional string input-placeholder: input-label
 
 -- ftd.row:
 width: fill-container
@@ -912,11 +845,13 @@ width.fixed.percent: 65
 color: $inherited.colors.text
 
 -- ftd.text: $hero-left-hug-expanded-search.title
+if: { hero-left-hug-expanded-search.title != NULL }
 role: $inherited.types.heading-hero
 style: bold
 margin-top.px: 15
 
 -- ftd.text:
+if: { hero-left-hug-expanded-search.body != NULL }
 role: $inherited.types.copy-regular
 max-width.fixed.percent: 90
 margin-top.px: 15
@@ -924,6 +859,7 @@ margin-top.px: 15
 $hero-left-hug-expanded-search.body
 
 -- ftd.text: $hero-left-hug-expanded-search.error-message
+if: { hero-left-hug-expanded-search.error-message != NULL }
 color: $inherited.colors.text
 role: $inherited.types.copy-small
 margin-top.px: 15
@@ -933,7 +869,12 @@ spacing.fixed.px: 12
 margin-top.px: 10
 align-content: center
 
+-- ftd.column:
+if: { hero-left-hug-expanded-search.input-placeholder != NULL }
+
 -- search-bar: $hero-left-hug-expanded-search.input-placeholder
+
+-- end: ftd.column
 
 -- primary-button: $hero-left-hug-expanded-search.primary-cta
 if: { hero-left-hug-expanded-search.primary-cta != NULL }
@@ -1086,16 +1027,16 @@ top.px: 12
 
 
 -- component hero-right-hug-expanded:
-caption title:
-body body:
+optional caption title:
+optional body body:
 ftd.image-src image:
 optional string primary-cta:
 string primary-cta-link: index.html
 ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
 optional string secondary-cta:
 string secondary-cta-link: index.html
-string input-label:
 ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+optional string input-label:
 
 -- ftd.row:
 width: fill-container
@@ -1150,6 +1091,7 @@ src: $hero-right-hug-expanded.secondary-cta-icon
 -- end: ftd.row
 
 -- ftd.text: $hero-right-hug-expanded.input-label
+if: { hero-right-hug-expanded.input-label != NULL }
 color: $inherited.colors.text
 role: $inherited.types.label-small
 margin-top.px: 10
